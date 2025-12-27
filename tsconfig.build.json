@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",          // compiled JS output
+    "rootDir": "src",          // only compile src folder
+    "declaration": true,       // optional: generate .d.ts files
+    "sourceMap": false,        // usually no source maps in prod
+    "target": "es2024",        // modern JS target
+    "incremental": true
+  },
+  "include": ["src"],          // only compile src
+  "exclude": ["tests", "**/*.spec.ts"] // exclude tests
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{headline}}</title>
+    <!--
+      DOCUMENTATION: A professional, multi-purpose transactional email template.
+      Inspired by a clean, modern design with a focus on clarity and a single call-to-action.
+
+      PLACEHOLDERS:
+      - {{companyName}}: Your application's name (e.g., "Synergy Hub").
+      - {{headline}}: The main, bold title of the email (e.g., "Your Weekly Report is Ready").
+      - {{customerName}}: The recipient's name (e.g., "Alex Carter").
+      - {{mainContentHtml}}: An HTML block for the body content. Use <p> tags for paragraphs.
+          Example: "<p>Thanks for starting this journey with us! We're excited to invite you to a free webinar this Friday.</p><p>Our experts will show you some cool tips and tricks.</p>"
+      - {{ctaButtonText}}: The text for the call-to-action button (e.g., "Reserve My Seat").
+      - {{actionUrl}}: The URL the CTA button will link to.
+      - {{unsubscribeUrl}}: Link to manage notification preferences.
+    -->
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #F0F2F5;">
+    <!-- Preheader text for email clients -->
+    <span style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+      A new message from {{companyName}}.
+    </span>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 40px 20px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; background-color: #FFFFFF; border-radius: 8px; border: 1px solid #E5E7EB;">
+                    <!-- Header -->
+                    <tr>
+                        <td style="padding: 20px 30px; border-bottom: 1px solid #E5E7EB;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="display: flex; align-items: center; column-gap: 12px;">
+                                        {{> logo.blueprint }}
+                                        <span style="font-size: 16px; font-weight: bold; color: #4B4B4B; vertical-align: middle;">{{companyName}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h1 style="font-size: 24px; font-weight: bold; color: #1E1E1E; margin: 0 0 20px 0;">{{headline}}</h1>
+                            <p style="margin: 0 0 25px 0; font-size: 16px; color: #565656; line-height: 1.6;">
+                                Hi {{customerName}},
+                            </p>
+
+                            <!-- The mainContentHtml placeholder will be injected here -->
+                            <div style="font-size: 16px; color: #565656; line-height: 1.6; margin: 0 0 35px 0;">
+                                {{{ mainContentHtml }}}
+                            </div>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="left">
+                                        <a href="{{actionUrl}}" target="_blank" style="background-color: #13866a; color: #FFFFFF; text-decoration: none; padding: 10px 25px; font-size: 15px; font-weight: bold; display: inline-block;">{{ctaButtonText}}</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 30px; text-align: center; font-size: 12px; color: #A0A0A0; line-height: 1.5;">
+                            <p style="margin: 0;">&copy; 2025 {{companyName}}. All Rights Reserved.</p>
+                            <p style="margin: 10px 0 0 0;">
+                                <a href="{{unsubscribeUrl}}" style="color: #A0A0A0; text-decoration: underline;">Unsubscribe</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

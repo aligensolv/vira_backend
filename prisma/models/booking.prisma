@@ -1,0 +1,33 @@
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+model Booking {
+  id Int @id @default(autoincrement())
+
+  user_id Int
+  user    User @relation(fields: [user_id], references: [id])
+
+  place_id Int
+  place    Place @relation(fields: [place_id], references: [id])
+
+  start_time       DateTime
+  end_time         DateTime
+  duration_minutes Int
+
+  payment Payment?
+
+  total_price Decimal @db.Decimal(10, 2)
+
+  status BookingStatus @default(PENDING)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([place_id, start_time, end_time])
+  @@index([user_id])
+  @@map("bookings")
+}

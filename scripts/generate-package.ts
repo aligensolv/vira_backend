@@ -209,9 +209,11 @@ export class ${featureName}Seeder {
     // Create your seeding logic here
     const ${featureNameLower}sData = ${featureName}Factory.count(10).make();
 
-    const result = await prisma.${featureNameLower}.createMany({
-      data: ${featureNameLower}sData,
-      skipDuplicates: true,
+    await this.db.$transaction(async (tx) => {
+      const result = await prisma.${featureNameLower}.createMany({
+        data: ${featureNameLower}sData,
+        skipDuplicates: true,
+      });
     });
 
     console.log(\`✅ Seeded \${result.count} ${featureName}s\`);
@@ -226,14 +228,6 @@ export class ${featureName}Seeder {
     const result = await prisma.${featureNameLower}.deleteMany({});
     
     console.log(\`✅ Truncated \${result.count} ${featureName}s\`);
-  }
-
-  /**
-   * Fresh seed - truncate then seed.
-   */
-  static async fresh(): Promise<void> {
-    await this.truncate();
-    await this.run();
   }
 }
 `,

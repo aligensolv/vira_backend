@@ -1,0 +1,163 @@
+{"level":"warn","message":"POST","timestamp":"2025-12-27 23:13:26"}
+{"level":"warn","message":"/api/users/registerx","timestamp":"2025-12-27 23:13:26"}
+{"level":"warn","message":"PostmanRuntime/7.51.0","timestamp":"2025-12-27 23:13:26"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/users/registerx","path":"/api/users/registerx","timestamp":"2025-12-27T21:13:26.528Z","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 04:22:37"}
+{"level":"warn","message":"/favicon.ico","timestamp":"2025-12-28 04:22:37"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:22:37"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-28T02:22:37.612Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:35"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:35"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:35"}
+{"body":{"bodySize":13,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:35.491Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:36"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:36"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:36"}
+{"body":{"bodySize":13,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:36.351Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:37"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:37"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:37"}
+{"body":{"bodySize":13,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:37.158Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:37"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:37"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:37"}
+{"body":{"bodySize":13,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:37.785Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:38"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:38"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:38"}
+{"body":{"bodySize":13,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:38.437Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 04:43:46"}
+{"level":"warn","message":"/api/regions","timestamp":"2025-12-28 04:43:46"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:43:46"}
+{"body":{"bodySize":17,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:46.626Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"PUT","timestamp":"2025-12-28 04:57:24"}
+{"level":"warn","message":"/api/regions/3","timestamp":"2025-12-28 04:57:24"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 04:57:24"}
+{"body":{"bodySize":17,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"PUT","originalUrl":"/api/regions/3","path":"/api/regions/3","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:57:24.792Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 05:44:54"}
+{"level":"warn","message":"/api/places/6","timestamp":"2025-12-28 05:44:54"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 05:44:54"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:54.698Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 05:44:55"}
+{"level":"warn","message":"/api/places/6","timestamp":"2025-12-28 05:44:55"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 05:44:55"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:55.709Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 05:44:57"}
+{"level":"warn","message":"/api/places/6","timestamp":"2025-12-28 05:44:57"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 05:44:57"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:57.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 05:45:02"}
+{"level":"warn","message":"/api/places/6","timestamp":"2025-12-28 05:45:02"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 05:45:02"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:45:02.301Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:08:59"}
+{"level":"warn","message":"/api/regions/12","timestamp":"2025-12-28 06:08:59"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:08:59"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12","path":"/api/regions/12","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:08:59.360Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:08:59"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:08:59"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:08:59"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:08:59.364Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:09:00"}
+{"level":"warn","message":"/api/regions/12","timestamp":"2025-12-28 06:09:00"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:09:00"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12","path":"/api/regions/12","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:09:00.371Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:09:00"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:09:00"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:09:00"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:09:00.377Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:11:13"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:11:13"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:11:13"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:13.359Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:11:14"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:11:14"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:11:14"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:14.482Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:11:15"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:11:15"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:11:15"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:15.500Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:11:17"}
+{"level":"warn","message":"/api/regions/12/places","timestamp":"2025-12-28 06:11:17"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:11:17"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:17.509Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:31:49"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:31:49"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:31:49"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:49.617Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:31:50"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:31:50"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:31:50"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:50.633Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:31:52"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:31:52"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:31:52"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:52.642Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:33:52"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:33:52"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:33:52"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:33:52.249Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:34:56"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:34:56"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:34:56"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:34:56.756Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:34:57"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:34:57"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:34:57"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:34:57.780Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:35:37"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:35:37"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:35:37"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:35:37.318Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 06:36:09"}
+{"level":"warn","message":"/api/regions/11/places","timestamp":"2025-12-28 06:36:09"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 06:36:09"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:36:09.477Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 07:17:42"}
+{"level":"warn","message":"/about","timestamp":"2025-12-28 07:17:42"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 07:17:42"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/about","path":"/about","timestamp":"2025-12-28T05:17:42.528Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 07:18:27"}
+{"level":"warn","message":"/api/bookings/2","timestamp":"2025-12-28 07:18:27"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 07:18:27"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/bookings/2","path":"/api/bookings/2","referer":"http://localhost:5173/","timestamp":"2025-12-28T05:18:27.906Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 07:18:28"}
+{"level":"warn","message":"/api/bookings/2","timestamp":"2025-12-28 07:18:28"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 07:18:28"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/bookings/2","path":"/api/bookings/2","referer":"http://localhost:5173/","timestamp":"2025-12-28T05:18:28.916Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"DELETE","timestamp":"2025-12-28 09:35:03"}
+{"level":"warn","message":"/api/users/11","timestamp":"2025-12-28 09:35:03"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 09:35:03"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"DELETE","originalUrl":"/api/users/11","path":"/api/users/11","referer":"http://localhost:5173/","timestamp":"2025-12-28T07:35:03.345Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"DELETE","timestamp":"2025-12-28 09:35:04"}
+{"level":"warn","message":"/api/users/11","timestamp":"2025-12-28 09:35:04"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 09:35:04"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"DELETE","originalUrl":"/api/users/11","path":"/api/users/11","referer":"http://localhost:5173/","timestamp":"2025-12-28T07:35:04.836Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-28 17:52:00"}
+{"level":"warn","message":"/api/admin/dashboard/metrics","timestamp":"2025-12-28 17:52:00"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-28 17:52:00"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/admin/dashboard/metrics","path":"/api/admin/dashboard/metrics","referer":"http://localhost:5173/","timestamp":"2025-12-28T15:52:00.268Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 18:32:33"}
+{"level":"warn","message":"/api/bookings","timestamp":"2025-12-28 18:32:33"}
+{"level":"warn","message":"Dart/3.10 (dart:io)","timestamp":"2025-12-28 18:32:33"}
+{"body":{"bodySize":78,"hasBody":true},"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/bookings","path":"/api/bookings","timestamp":"2025-12-28T16:32:33.611Z","userAgent":"Dart/3.10 (dart:io)"}
+{"level":"warn","message":"POST","timestamp":"2025-12-28 23:21:05"}
+{"level":"warn","message":"/api/bookings","timestamp":"2025-12-28 23:21:05"}
+{"level":"warn","message":"Dart/3.10 (dart:io)","timestamp":"2025-12-28 23:21:05"}
+{"body":{"bodySize":78,"hasBody":true},"ip":"::ffff:192.168.1.4","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/bookings","path":"/api/bookings","timestamp":"2025-12-28T21:21:05.699Z","userAgent":"Dart/3.10 (dart:io)"}
+{"level":"warn","message":"PUT","timestamp":"2025-12-29 02:17:05"}
+{"level":"warn","message":"/api/regions/22","timestamp":"2025-12-29 02:17:05"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-29 02:17:05"}
+{"body":{"bodySize":15,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"PUT","originalUrl":"/api/regions/22","path":"/api/regions/22","referer":"http://localhost:5173/","timestamp":"2025-12-29T00:17:05.228Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"error","message":"Email was not found","timestamp":"2025-12-30 12:40:52"}
+{"level":"error","message":"Email was not found","timestamp":"2025-12-30 12:41:06"}
+{"level":"error","message":"Email was not found","timestamp":"2025-12-30 12:41:50"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 00:06:32"}
+{"level":"warn","message":"/","timestamp":"2025-12-31 00:06:32"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-31 00:06:32"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/","path":"/","timestamp":"2025-12-30T22:06:32.486Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 00:06:32"}
+{"level":"warn","message":"/favicon.ico","timestamp":"2025-12-31 00:06:32"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-31 00:06:32"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-30T22:06:32.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}

@@ -1,9 +1,10 @@
 // src/utils/auth/jwt.ts
-import jwt, { JwtPayload } from "jsonwebtoken";
+import jwt, { JwtPayload, SignOptions } from "jsonwebtoken";
 import { securityConfig } from "../../config/server_configs";
 
 export function generateToken(payload: object, expiresIn: string | number = securityConfig.jwtExpiresIn) {
-  return jwt.sign(payload, securityConfig.jwtSecret as string, { expiresIn });
+  const options: SignOptions = { expiresIn: expiresIn as SignOptions['expiresIn'] };
+  return jwt.sign(payload, securityConfig.jwtSecret, options);
 }
 
 export function verifyToken<T = JwtPayload>(token: string): T | null {

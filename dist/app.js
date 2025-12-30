@@ -43,6 +43,7 @@ const error_handler_1 = __importDefault(require("./core/middlewares/error_handle
 const cors_1 = __importDefault(require("cors"));
 const compression_1 = __importDefault(require("compression"));
 const helmet_1 = __importDefault(require("helmet"));
+const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const logger_1 = __importDefault(require("./core/utils/logger"));
 const not_found_1 = require("./core/middlewares/not_found");
 const server_configs_1 = require("./core/config/server_configs");
@@ -51,14 +52,14 @@ exports.app = (0, express_1.default)();
 exports.app.use((0, helmet_1.default)());
 exports.app.use('/assets', express_1.default.static(path.join(__dirname, 'assets')));
 exports.app.use('/blueprints', express_1.default.static(path.join(__dirname, 'blueprints')));
-exports.app.use('/api');
 if (server_configs_1.appConfig.env == 'development') {
     exports.app.use(dev_route_1.TestRoute);
 }
 const whitelist = server_configs_1.corsConfig.whitelist;
+console.log(whitelist);
 const corsMiddleware = (0, cors_1.default)({
     origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
+        if (whitelist.indexOf(origin) != -1 || !origin) {
             callback(null, true);
         }
         else {
@@ -70,6 +71,8 @@ exports.app.use(corsMiddleware);
 exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.urlencoded({ extended: true }));
 exports.app.use((0, compression_1.default)());
+exports.app.use((0, cookie_parser_1.default)());
+exports.app.use('/api', express_1.default.Router());
 const $404 = (0, not_found_1.notFoundMiddleware)({
     logger: logger_1.default,
     suggestAlternatives: true,

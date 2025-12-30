@@ -7,4 +7,3 @@ export async function hashPassword(password: string, saltRounds = 12): Promise<s
 export async function verifyPassword(password: string, hashed: string): Promise<boolean> {
   return argon.verify(hashed, password);
 }
-

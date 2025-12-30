@@ -1,7 +1,7 @@
 import { ApiError } from "./api_error";
-import { Rejector, Resolver } from "../core/types/promise";
 import { StatusCode } from "./status_codes";
 import { ErrorCode } from "./error_codes";
+import { Rejector, Resolver } from "../core/interfaces/promise";
 
 const promiseWrapper = <T>(fn: (resolve: Resolver<T>, reject: Rejector) => Promise<void>): Promise<T> => {
     return new Promise<T>((resolve, reject) => {

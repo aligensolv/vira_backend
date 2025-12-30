@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const place_controller_1 = require("./place.controller");
+const validate_data_middleware_1 = require("../../core/middlewares/validate-data.middleware");
+const place_schema_1 = require("./place.schema");
+const router = (0, express_1.Router)();
+router.get("/places", place_controller_1.getPlacesHandler);
+router.get("/places/active", place_controller_1.getActivePlacesHandler);
+router.get("/regions/:id/places", place_controller_1.getPlacesHandler);
+router.post('/places', (0, validate_data_middleware_1.validateBody)(place_schema_1.createPlaceSchema), place_controller_1.createPlaceHandler);
+router.get('/places/:id', place_controller_1.getPlaceHandler);
+router.put('/places/:id', place_controller_1.updatePlaceHandler);
+router.delete('/places/:id', place_controller_1.deletePlaceHandler);
+exports.default = router;

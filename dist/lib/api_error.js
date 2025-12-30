@@ -6,18 +6,18 @@ const status_codes_1 = require("./status_codes");
 class ApiError extends Error {
     code;
     status;
-    details;
-    constructor(message, code = error_codes_1.ErrorCode.INTERNAL_SERVER_ERROR, status = status_codes_1.StatusCode.INTERNAL_SERVER, details = []) {
+    errors;
+    constructor(message, code = error_codes_1.ErrorCode.INTERNAL_SERVER_ERROR, status = status_codes_1.StatusCode.INTERNAL_SERVER, errors = []) {
         super(message);
         this.code = code;
         this.status = status;
-        this.details = details;
+        this.errors = errors;
     }
 }
 exports.ApiError = ApiError;
 class ValidationError extends ApiError {
-    constructor(details = []) {
-        super("Validation failed", error_codes_1.ErrorCode.VALIDATION_ERROR, status_codes_1.StatusCode.BAD_REQUEST, details);
+    constructor(errors = []) {
+        super("Validation failed", error_codes_1.ErrorCode.VALIDATION_ERROR, status_codes_1.StatusCode.BAD_REQUEST, errors);
     }
 }
 exports.ValidationError = ValidationError;

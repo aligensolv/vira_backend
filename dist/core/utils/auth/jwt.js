@@ -10,7 +10,8 @@ exports.decodeToken = decodeToken;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const server_configs_1 = require("../../config/server_configs");
 function generateToken(payload, expiresIn = server_configs_1.securityConfig.jwtExpiresIn) {
-    return jsonwebtoken_1.default.sign(payload, server_configs_1.securityConfig.jwtSecret, { expiresIn });
+    const options = { expiresIn: expiresIn };
+    return jsonwebtoken_1.default.sign(payload, server_configs_1.securityConfig.jwtSecret, options);
 }
 function verifyToken(token) {
     try {

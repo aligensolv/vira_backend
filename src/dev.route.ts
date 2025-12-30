@@ -14,7 +14,7 @@ const webinarContent = `
 router.get('/test', async (req, res) => {
   await blueprintService.loadBlueprints();
 
-  const emailHtml = blueprintService.render('emails.welcome_email', {
+  const emailHtml = blueprintService.render('emails.reset_password', {
     companyName: 'Synergy Hub',
     headline: 'Get expert advice and answers in our free webinar',
     customerName: 'Alex Carter',

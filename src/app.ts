@@ -4,6 +4,7 @@ import errorHandler from './core/middlewares/error_handler';
 import cors from 'cors'
 import compression from 'compression'
 import helmet from 'helmet';
+import cookieParser from "cookie-parser";
 
 import logger from './core/utils/logger';
 import { notFoundMiddleware } from './core/middlewares/not_found';
@@ -17,9 +18,6 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/blueprints', express.static(path.join(__dirname, 'blueprints')));
 
 
-app.use(
-  '/api'
-)
 
 if(appConfig.env == 'development') {
   app.use(TestRoute)
@@ -27,9 +25,12 @@ if(appConfig.env == 'development') {
 
 const whitelist = corsConfig.whitelist
 
+console.log(whitelist);
+
+
 const corsMiddleware = cors({
   origin: function (origin, callback) {
-    if (whitelist.indexOf(origin as string) !== -1 || !origin) {
+    if (whitelist.indexOf(origin as string) != -1 || !origin) {
       callback(null, true)
     } else {
       callback(new Error('Not allowed by CORS'))
@@ -41,6 +42,12 @@ app.use(corsMiddleware);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(compression())
+app.use(cookieParser())
+
+app.use(
+  '/api',
+  express.Router()
+)
 
 const $404 = notFoundMiddleware({
   logger: logger,

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const region_controller_1 = require("./region.controller");
+const router = (0, express_1.Router)();
+router.get("/regions", region_controller_1.getRegionsHandler);
+router.post("/regions", region_controller_1.createRegionsHandler);
+router.get("/regions/:id", region_controller_1.getRegionHandler);
+router.put("/regions/:id", region_controller_1.updateRegionHandler);
+router.delete("/regions/:id", region_controller_1.deleteRegionsHandler);
+exports.default = router;

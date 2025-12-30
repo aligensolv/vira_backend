@@ -7,23 +7,23 @@ type StatusCodeType = (typeof StatusCode)[keyof typeof StatusCode];
 class ApiError extends Error {
     code: ErrorCodeType
     status: StatusCodeType
-    details: Array<string>
+    errors: Array<string>
     constructor(
         message: string,
         code: ErrorCodeType = ErrorCode.INTERNAL_SERVER_ERROR,
         status: StatusCodeType = StatusCode.INTERNAL_SERVER,
-        details: Array<string> = []
+        errors: Array<string> = []
     ) {
         super(message);
         this.code = code;
         this.status = status;
-        this.details = details;
+        this.errors = errors;
     }
 }
 
 class ValidationError extends ApiError {
-    constructor(details = []) {
-        super("Validation failed", ErrorCode.VALIDATION_ERROR, StatusCode.BAD_REQUEST, details);
+    constructor(errors = []) {
+        super("Validation failed", ErrorCode.VALIDATION_ERROR, StatusCode.BAD_REQUEST, errors);
     }
 }
 

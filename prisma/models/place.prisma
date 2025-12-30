@@ -1,0 +1,18 @@
+model Place {
+  id Int @id @default(autoincrement())
+
+  region_id Int?
+  region    Region? @relation(fields: [region_id], references: [id], onDelete: Cascade)
+
+  name             String
+  price_per_hour   Decimal @db.Decimal(10, 2)
+  min_duration_min Int     @default(30)
+  is_active        Boolean @default(true)
+
+  bookings Booking[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("places")
+}

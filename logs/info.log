@@ -1,0 +1,163 @@
+[33mwarn[39m: POST {"timestamp":"2025-12-27 23:13:26"}
+[33mwarn[39m: /api/users/registerx {"timestamp":"2025-12-27 23:13:26"}
+[33mwarn[39m: PostmanRuntime/7.51.0 {"timestamp":"2025-12-27 23:13:26"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"POST","originalUrl":"/api/users/registerx","path":"/api/users/registerx","timestamp":"2025-12-27T21:13:26.528Z","userAgent":"PostmanRuntime/7.51.0"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 04:22:37"}
+[33mwarn[39m: /favicon.ico {"timestamp":"2025-12-28 04:22:37"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:22:37"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-28T02:22:37.612Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:35"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:35"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:35"}
+[33mwarn[39m: Route not found {"body":{"bodySize":13,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:35.491Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:36"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:36"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:36"}
+[33mwarn[39m: Route not found {"body":{"bodySize":13,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:36.351Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: Route not found {"body":{"bodySize":13,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:37.158Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:37"}
+[33mwarn[39m: Route not found {"body":{"bodySize":13,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:37.785Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:38"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:38"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:38"}
+[33mwarn[39m: Route not found {"body":{"bodySize":13,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:38.437Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 04:43:46"}
+[33mwarn[39m: /api/regions {"timestamp":"2025-12-28 04:43:46"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:43:46"}
+[33mwarn[39m: Route not found {"body":{"bodySize":17,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/regions","path":"/api/regions","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:43:46.626Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: PUT {"timestamp":"2025-12-28 04:57:24"}
+[33mwarn[39m: /api/regions/3 {"timestamp":"2025-12-28 04:57:24"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 04:57:24"}
+[33mwarn[39m: Route not found {"body":{"bodySize":17,"hasBody":true},"ip":"::1","method":"PUT","originalUrl":"/api/regions/3","path":"/api/regions/3","referer":"http://localhost:5173/","timestamp":"2025-12-28T02:57:24.792Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 05:44:54"}
+[33mwarn[39m: /api/places/6 {"timestamp":"2025-12-28 05:44:54"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 05:44:54"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:54.698Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 05:44:55"}
+[33mwarn[39m: /api/places/6 {"timestamp":"2025-12-28 05:44:55"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 05:44:55"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:55.709Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 05:44:57"}
+[33mwarn[39m: /api/places/6 {"timestamp":"2025-12-28 05:44:57"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 05:44:57"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:44:57.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 05:45:02"}
+[33mwarn[39m: /api/places/6 {"timestamp":"2025-12-28 05:45:02"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 05:45:02"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/places/6","path":"/api/places/6","referer":"http://localhost:5173/","timestamp":"2025-12-28T03:45:02.301Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: /api/regions/12 {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12","path":"/api/regions/12","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:08:59.360Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:08:59"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:08:59.364Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: /api/regions/12 {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12","path":"/api/regions/12","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:09:00.371Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:09:00"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:09:00.377Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:11:13"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:11:13"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:11:13"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:13.359Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:11:14"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:11:14"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:11:14"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:14.482Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:11:15"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:11:15"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:11:15"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:15.500Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:11:17"}
+[33mwarn[39m: /api/regions/12/places {"timestamp":"2025-12-28 06:11:17"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:11:17"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/12/places","path":"/api/regions/12/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:11:17.509Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:31:49"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:31:49"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:31:49"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:49.617Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:31:50"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:31:50"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:31:50"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:50.633Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:31:52"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:31:52"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:31:52"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:31:52.642Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:33:52"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:33:52"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:33:52"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:33:52.249Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:34:56"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:34:56"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:34:56"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:34:56.756Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:34:57"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:34:57"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:34:57"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:34:57.780Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:35:37"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:35:37"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:35:37"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:35:37.318Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 06:36:09"}
+[33mwarn[39m: /api/regions/11/places {"timestamp":"2025-12-28 06:36:09"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 06:36:09"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/regions/11/places","path":"/api/regions/11/places","referer":"http://localhost:5173/","timestamp":"2025-12-28T04:36:09.477Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 07:17:42"}
+[33mwarn[39m: /about {"timestamp":"2025-12-28 07:17:42"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 07:17:42"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/about","path":"/about","timestamp":"2025-12-28T05:17:42.528Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 07:18:27"}
+[33mwarn[39m: /api/bookings/2 {"timestamp":"2025-12-28 07:18:27"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 07:18:27"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings/2","path":"/api/bookings/2","referer":"http://localhost:5173/","timestamp":"2025-12-28T05:18:27.906Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 07:18:28"}
+[33mwarn[39m: /api/bookings/2 {"timestamp":"2025-12-28 07:18:28"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 07:18:28"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings/2","path":"/api/bookings/2","referer":"http://localhost:5173/","timestamp":"2025-12-28T05:18:28.916Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: DELETE {"timestamp":"2025-12-28 09:35:03"}
+[33mwarn[39m: /api/users/11 {"timestamp":"2025-12-28 09:35:03"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 09:35:03"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"DELETE","originalUrl":"/api/users/11","path":"/api/users/11","referer":"http://localhost:5173/","timestamp":"2025-12-28T07:35:03.345Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: DELETE {"timestamp":"2025-12-28 09:35:04"}
+[33mwarn[39m: /api/users/11 {"timestamp":"2025-12-28 09:35:04"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 09:35:04"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"DELETE","originalUrl":"/api/users/11","path":"/api/users/11","referer":"http://localhost:5173/","timestamp":"2025-12-28T07:35:04.836Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-28 17:52:00"}
+[33mwarn[39m: /api/admin/dashboard/metrics {"timestamp":"2025-12-28 17:52:00"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-28 17:52:00"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/dashboard/metrics","path":"/api/admin/dashboard/metrics","referer":"http://localhost:5173/","timestamp":"2025-12-28T15:52:00.268Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 18:32:33"}
+[33mwarn[39m: /api/bookings {"timestamp":"2025-12-28 18:32:33"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2025-12-28 18:32:33"}
+[33mwarn[39m: Route not found {"body":{"bodySize":78,"hasBody":true},"ip":"::ffff:127.0.0.1","method":"POST","originalUrl":"/api/bookings","path":"/api/bookings","timestamp":"2025-12-28T16:32:33.611Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2025-12-28 23:21:05"}
+[33mwarn[39m: /api/bookings {"timestamp":"2025-12-28 23:21:05"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2025-12-28 23:21:05"}
+[33mwarn[39m: Route not found {"body":{"bodySize":78,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/bookings","path":"/api/bookings","timestamp":"2025-12-28T21:21:05.699Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: PUT {"timestamp":"2025-12-29 02:17:05"}
+[33mwarn[39m: /api/regions/22 {"timestamp":"2025-12-29 02:17:05"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-29 02:17:05"}
+[33mwarn[39m: Route not found {"body":{"bodySize":15,"hasBody":true},"ip":"::1","method":"PUT","originalUrl":"/api/regions/22","path":"/api/regions/22","referer":"http://localhost:5173/","timestamp":"2025-12-29T00:17:05.228Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[31merror[39m: Email was not found {"timestamp":"2025-12-30 12:40:52"}
+[31merror[39m: Email was not found {"timestamp":"2025-12-30 12:41:06"}
+[31merror[39m: Email was not found {"timestamp":"2025-12-30 12:41:50"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: / {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/","path":"/","timestamp":"2025-12-30T22:06:32.486Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: /favicon.ico {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 00:06:32"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-30T22:06:32.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}

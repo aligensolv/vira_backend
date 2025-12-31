@@ -51,6 +51,7 @@ const dev_route_1 = require("./dev.route");
 const auth_1 = require("./packages/auth");
 const region_1 = require("./packages/region");
 const place_1 = require("./packages/place");
+const user_1 = require("./packages/user");
 exports.app = (0, express_1.default)();
 exports.app.use((0, helmet_1.default)());
 exports.app.use('/assets', express_1.default.static(path.join(__dirname, 'assets')));
@@ -75,7 +76,7 @@ exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.urlencoded({ extended: true }));
 exports.app.use((0, compression_1.default)());
 exports.app.use((0, cookie_parser_1.default)());
-exports.app.use('/api', auth_1.AuthRoutes, region_1.RegionRoutes, place_1.PlaceRoutes);
+exports.app.use('/api', auth_1.AuthRoutes, region_1.RegionRoutes, place_1.PlaceRoutes, user_1.UserRoutes);
 const $404 = (0, not_found_1.notFoundMiddleware)({
     logger: logger_1.default,
     suggestAlternatives: true,

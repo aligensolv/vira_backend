@@ -1,7 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toUserDTO = toUserDTO;
-// Transform DB result to DTO
 function toUserDTO(entity) {
-    return entity;
+    return {
+        id: entity.id,
+        name: entity.name,
+        email: entity.email,
+        created_at: entity.created_at,
+        updated_at: entity.updated_at,
+    };
 }

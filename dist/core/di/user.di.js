@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userService = exports.userRepository = exports.userController = void 0;
+const user_1 = require("../../packages/user");
+const userRepository = new user_1.UserRepository();
+exports.userRepository = userRepository;
+const userService = new user_1.UserService(userRepository);
+exports.userService = userService;
+const userController = new user_1.UserController(userService);
+exports.userController = userController;

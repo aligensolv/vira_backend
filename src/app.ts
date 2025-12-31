@@ -13,6 +13,7 @@ import { TestRoute } from './dev.route';
 import { AuthRoutes } from './packages/auth';
 import { RegionRoutes } from './packages/region';
 import { PlaceRoutes } from './packages/place';
+import { UserRoutes } from './packages/user';
 
 export const app = express();
 app.use(helmet())
@@ -51,7 +52,8 @@ app.use(
   '/api',
   AuthRoutes,
   RegionRoutes,
-  PlaceRoutes
+  PlaceRoutes,
+  UserRoutes
 )
 
 const $404 = notFoundMiddleware({

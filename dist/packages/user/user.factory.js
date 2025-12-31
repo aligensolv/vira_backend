@@ -8,12 +8,11 @@ class UserFactory {
      */
     static definition() {
         return {
-            name: faker_1.faker.internet.username(),
+            name: faker_1.faker.person.fullName(),
             email: faker_1.faker.internet.email(),
             password: faker_1.faker.internet.password(),
-            role: 'USER',
-            created_at: faker_1.faker.date.past(),
-            updated_at: faker_1.faker.date.recent()
+            created_at: new Date(),
+            updated_at: new Date(),
         };
     }
     /**
@@ -33,6 +32,19 @@ class UserFactory {
             make: (overrides = {}) => {
                 return Array.from({ length: amount }, () => this.make(overrides));
             },
+        };
+    }
+    /**
+     * Define a state modification.
+     */
+    static state(stateOverrides) {
+        return {
+            make: (overrides = {}) => this.make({ ...stateOverrides, ...overrides }),
+            count: (amount) => ({
+                make: (overrides = {}) => {
+                    return Array.from({ length: amount }, () => this.make({ ...stateOverrides, ...overrides }));
+                },
+            }),
         };
     }
 }

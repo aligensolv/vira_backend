@@ -10,7 +10,7 @@ class PlaceFactory {
         return {
             name: faker_1.faker.location.street(),
             is_active: faker_1.faker.datatype.boolean(),
-            min_duration_min: faker_1.faker.number.int({ min: 15, max: 120 }),
+            min_duration_minutes: faker_1.faker.number.int({ min: 15, max: 120 }),
             price_per_hour: faker_1.faker.number.int({ min: 5, max: 100 }),
             region_id: null,
             created_at: new Date(),

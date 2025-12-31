@@ -8,13 +8,6 @@ class PlaceSeeder {
      * Run the database seeds.
      */
     static async run() {
-        // Default seeding logic - customize as needed
-        await this.seed();
-    }
-    /**
-     * Seed Places table.
-     */
-    static async seed() {
         console.log(`🌱 Seeding Places...`);
         // Create your seeding logic here
         const placesData = place_factory_1.PlaceFactory.count(10).make();

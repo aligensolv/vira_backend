@@ -12,6 +12,7 @@ import { appConfig, corsConfig } from './core/config/server_configs';
 import { TestRoute } from './dev.route';
 import { AuthRoutes } from './packages/auth';
 import { RegionRoutes } from './packages/region';
+import { PlaceRoutes } from './packages/place';
 
 export const app = express();
 app.use(helmet())
@@ -49,7 +50,8 @@ app.use(cookieParser())
 app.use(
   '/api',
   AuthRoutes,
-  RegionRoutes
+  RegionRoutes,
+  PlaceRoutes
 )
 
 const $404 = notFoundMiddleware({

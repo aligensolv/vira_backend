@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.placeService = exports.placeRepository = exports.placeController = void 0;
+const place_1 = require("../../packages/place");
+const placeRepository = new place_1.PlaceRepository();
+exports.placeRepository = placeRepository;
+const placeService = new place_1.PlaceService(placeRepository);
+exports.placeService = placeService;
+const placeController = new place_1.PlaceController(placeService);
+exports.placeController = placeController;

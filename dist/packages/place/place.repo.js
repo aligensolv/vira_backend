@@ -40,5 +40,8 @@ class PlaceRepository {
     async removeMany(filter) {
         return client_1.prisma.place.deleteMany({ where: filter });
     }
+    async search(filter) {
+        return await client_1.prisma.region.findFirst({ where: filter });
+    }
 }
 exports.PlaceRepository = PlaceRepository;

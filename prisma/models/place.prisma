@@ -6,7 +6,7 @@ model Place {
 
   name             String
   price_per_hour   Decimal @db.Decimal(10, 2)
-  min_duration_min Int     @default(30)
+  min_duration_minutes Int     @default(30)
   is_active        Boolean @default(true)
 
   bookings Booking[]

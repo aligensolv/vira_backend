@@ -11,7 +11,12 @@ class PlaceController {
         this.placeService = placeService;
     }
     getPlacesHandler = (0, async_wrapper_1.default)(async (req, res) => {
-        const data = await this.placeService.getAllPlaces();
+        const { q, status, region_id } = req.query;
+        const data = await this.placeService.getAllPlaces({
+            q: q,
+            status: status,
+            region_id: region_id
+        });
         res.json({ data });
     });
     getActivePlacesHandler = (0, async_wrapper_1.default)(async (req, res) => {

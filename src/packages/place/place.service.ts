@@ -5,8 +5,7 @@ import { PlaceRepository } from "./place.repo";
 import z from 'zod';
 import { updateRegionSchema } from '../region';
 import { NotFoundError } from '../../lib/api_error';
-
-
+import { PlaceFilters } from './place.type';
 
 export class PlaceService {
   private readonly placeRepository
@@ -15,11 +14,34 @@ export class PlaceService {
     this.placeRepository = placeRepository
   }
 
-  public getAllPlaces = async () => promiseWrapper(
+  public getAllPlaces = async ({ q, status, region_id }: PlaceFilters) => promiseWrapper(
     async (resolve) => {
-      const result = await this.placeRepository.findMany()
+      console.log({ q, status, region_id });
+      
+
+      let places = await this.placeRepository.findMany()
+
+      if (q) {
+        places = places.filter(place => 
+          place.name?.toLowerCase().includes(q.toLowerCase()) ||
+          place.region?.name?.toLowerCase().includes(q.toLowerCase())
+        )
+      }
+
+      const is_active = !(status == 'inactive' ? true : false)
+
+      if (status != 'all') {
+        places = places.filter(place => 
+          place.is_active == is_active
+        )
+      }
+
+      if (region_id) {
+        places = places.filter(place => place.region_id == region_id)
+      }
+
       return resolve(
-        result.map(toPlaceDTO)
+        places.map(toPlaceDTO)
       );
     }
   )

@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { PlaceService } from "./place.service";
 import asyncWrapper from "../../lib/async_wrapper";
+import { PlaceFilters } from "./place.type";
 
 
 export class PlaceController {
@@ -12,7 +13,13 @@ export class PlaceController {
 
   public getPlacesHandler = asyncWrapper(
     async (req: Request, res: Response) => {
-      const data = await this.placeService.getAllPlaces();
+      const { q, status, region_id } = req.query
+      
+      const data = await this.placeService.getAllPlaces({
+        q: q as PlaceFilters['q'],
+        status: status as PlaceFilters['status'],
+        region_id: region_id as PlaceFilters['region_id']
+      });
       res.json({ data });
     }
   );

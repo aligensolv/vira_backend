@@ -13,11 +13,8 @@ export interface TokenPayload extends JwtPayload {
 }
 
 export const authMiddleware = async (req: Request, res: Response, next: NextFunction) => {
-  const client_source = req.headers['x-client-source'] as 'web' | 'mobile-app' | 'dev'
   
-    const token = client_source == 'web' ? getAuthCookie(req) : req.headers.authorization
-    console.log(token);
-    console.log(client_source);
+  const token = req.headers.authorization
     
   if (!token) return next(new AuthError("Unauthorized"))
 

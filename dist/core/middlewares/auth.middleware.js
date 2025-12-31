@@ -3,12 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.authorizeRoles = exports.authMiddleware = void 0;
 const api_error_1 = require("../../lib/api_error");
 const jwt_1 = require("../utils/auth/jwt");
-const cookie_1 = require("../utils/auth/cookie");
 const authMiddleware = async (req, res, next) => {
-    const client_source = req.headers['x-client-source'];
-    const token = client_source == 'web' ? (0, cookie_1.getAuthCookie)(req) : req.headers.authorization;
-    console.log(token);
-    console.log(client_source);
+    const token = req.headers.authorization;
     if (!token)
         return next(new api_error_1.AuthError("Unauthorized"));
     try {

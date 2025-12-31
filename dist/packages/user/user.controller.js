@@ -10,8 +10,9 @@ class UserController {
     constructor(userService) {
         this.userService = userService;
     }
-    getAllUsersHandler = (0, async_wrapper_1.default)(async (_, res) => {
-        const data = await this.userService.getAllUsers();
+    getAllUsersHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { q } = req.query;
+        const data = await this.userService.getAllUsers({ q: q });
         res.json({ data });
     });
 }

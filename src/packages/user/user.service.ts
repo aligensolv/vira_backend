@@ -9,11 +9,19 @@ export class UserService {
     this.userRepository = userRepository
   }
 
-  public getAllUsers = async () => promiseWrapper(
+  public getAllUsers = async ({ q }: { q?: string }) => promiseWrapper(
     async (resolve) => {
-      const result = await this.userRepository.findMany()
+      let users = await this.userRepository.findMany()
+      
+      if (q) {
+        users = users.filter(user => 
+          user.name?.toLowerCase().includes(q.toLowerCase()) ||
+          user.email?.toLowerCase().includes(q.toLowerCase())
+        )
+      }
+      
       return resolve(
-        result.map(toUserDTO)
+        users.map(toUserDTO)
       );
     }
   )

@@ -9,8 +9,10 @@ export class UserController {
   }
 
   public getAllUsersHandler = asyncWrapper(
-    async (_, res) => {
-      const data = await this.userService.getAllUsers();
+    async (req, res) => {
+      const { q } = req.query
+
+      const data = await this.userService.getAllUsers({ q: q as string });
       res.json({ data });
     }
   )

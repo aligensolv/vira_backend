@@ -32,4 +32,8 @@ export class RegionRepository {
     async search (filter?: Prisma.RegionWhereInput) {
         return await prisma.region.findFirst({ where: filter });
     }
+
+    async count(filter?: Prisma.RegionWhereInput) {
+        return prisma.region.count({ where: filter });
+    }
 }

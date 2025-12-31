@@ -15,7 +15,7 @@ export class RegionController {
   public getRegionsHandler = asyncWrapper(
     async (req: Request, res: Response) => {
       const data = await this.regionService.getAllRegions();
-      res.json({ data });
+      res.json(data);
     }
   )
 

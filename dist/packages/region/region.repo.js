@@ -25,5 +25,8 @@ class RegionRepository {
     async search(filter) {
         return await client_1.prisma.region.findFirst({ where: filter });
     }
+    async count(filter) {
+        return client_1.prisma.region.count({ where: filter });
+    }
 }
 exports.RegionRepository = RegionRepository;

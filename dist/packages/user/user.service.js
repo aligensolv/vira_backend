@@ -11,9 +11,13 @@ class UserService {
     constructor(userRepository) {
         this.userRepository = userRepository;
     }
-    getAllUsers = async () => (0, promise_wrapper_1.default)(async (resolve) => {
-        const result = await this.userRepository.findMany();
-        return resolve(result.map(auth_1.toUserDTO));
+    getAllUsers = async ({ q }) => (0, promise_wrapper_1.default)(async (resolve) => {
+        let users = await this.userRepository.findMany();
+        if (q) {
+            users = users.filter(user => user.name?.toLowerCase().includes(q.toLowerCase()) ||
+                user.email?.toLowerCase().includes(q.toLowerCase()));
+        }
+        return resolve(users.map(auth_1.toUserDTO));
     });
 }
 exports.UserService = UserService;

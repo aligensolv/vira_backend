@@ -12,9 +12,21 @@ class PlaceService {
     constructor(placeRepository) {
         this.placeRepository = placeRepository;
     }
-    getAllPlaces = async () => (0, promise_wrapper_1.default)(async (resolve) => {
-        const result = await this.placeRepository.findMany();
-        return resolve(result.map(place_mapper_1.toPlaceDTO));
+    getAllPlaces = async ({ q, status, region_id }) => (0, promise_wrapper_1.default)(async (resolve) => {
+        console.log({ q, status, region_id });
+        let places = await this.placeRepository.findMany();
+        if (q) {
+            places = places.filter(place => place.name?.toLowerCase().includes(q.toLowerCase()) ||
+                place.region?.name?.toLowerCase().includes(q.toLowerCase()));
+        }
+        const is_active = !(status == 'inactive' ? true : false);
+        if (status != 'all') {
+            places = places.filter(place => place.is_active == is_active);
+        }
+        if (region_id) {
+            places = places.filter(place => place.region_id == region_id);
+        }
+        return resolve(places.map(place_mapper_1.toPlaceDTO));
     });
     getAllActivePlaces = async () => (0, promise_wrapper_1.default)(async (resolve) => {
         const result = await this.placeRepository.findMany({

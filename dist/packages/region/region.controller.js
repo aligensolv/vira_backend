@@ -12,7 +12,7 @@ class RegionController {
     }
     getRegionsHandler = (0, async_wrapper_1.default)(async (req, res) => {
         const data = await this.regionService.getAllRegions();
-        res.json({ data });
+        res.json(data);
     });
     createRegionHandler = (0, async_wrapper_1.default)(async (req, res) => {
         const data = await this.regionService.createRegion(req.body);

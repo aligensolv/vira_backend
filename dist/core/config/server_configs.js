@@ -13,7 +13,7 @@ exports.appConfig = {
 };
 // Security Configs
 exports.securityConfig = {
-    jwtSecret: process.env.JWT_SECRET || 'your_jwt_secret_key',
+    jwtSecret: process.env.JWT_SECRET || 'vira_jwt_secret_key',
     jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1d',
 };
 // CORS Configs

@@ -5,8 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const api_error_1 = require("./api_error");
 const logger_1 = __importDefault(require("../core/utils/logger"));
-const error_codes_1 = require("./error_codes");
-const status_codes_1 = require("./status_codes");
 const asyncWrapper = (fn) => {
     return async (req, res, next) => {
         try {
@@ -17,7 +15,7 @@ const asyncWrapper = (fn) => {
                 logger_1.default.error(error.message);
                 return next(error);
             }
-            const custom_error = new api_error_1.ApiError(error.message, error_codes_1.ErrorCode.INTERNAL_SERVER_ERROR, status_codes_1.StatusCode.INTERNAL_SERVER);
+            const custom_error = new api_error_1.InternalServerError(error.message);
             return next(custom_error);
         }
     };

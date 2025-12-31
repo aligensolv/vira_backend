@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hashPassword = hashPassword;
-exports.verifyPassword = verifyPassword;
+exports.generateHashedPassword = generateHashedPassword;
+exports.isPasswordValid = isPasswordValid;
 const argon2_1 = __importDefault(require("argon2"));
-async function hashPassword(password, saltRounds = 12) {
+async function generateHashedPassword(password, saltRounds = 12) {
     return argon2_1.default.hash(password, { timeCost: saltRounds });
 }
-async function verifyPassword(password, hashed) {
-    return argon2_1.default.verify(hashed, password);
+async function isPasswordValid({ hashed, plain }) {
+    return argon2_1.default.verify(hashed, plain);
 }

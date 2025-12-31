@@ -10,6 +10,7 @@ import logger from './core/utils/logger';
 import { notFoundMiddleware } from './core/middlewares/not_found';
 import { appConfig, corsConfig } from './core/config/server_configs';
 import { TestRoute } from './dev.route';
+import { AuthRoutes } from './packages/auth';
 
 export const app = express();
 app.use(helmet())
@@ -46,7 +47,7 @@ app.use(cookieParser())
 
 app.use(
   '/api',
-  express.Router()
+  AuthRoutes
 )
 
 const $404 = notFoundMiddleware({

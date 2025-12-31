@@ -48,6 +48,7 @@ const logger_1 = __importDefault(require("./core/utils/logger"));
 const not_found_1 = require("./core/middlewares/not_found");
 const server_configs_1 = require("./core/config/server_configs");
 const dev_route_1 = require("./dev.route");
+const auth_1 = require("./packages/auth");
 exports.app = (0, express_1.default)();
 exports.app.use((0, helmet_1.default)());
 exports.app.use('/assets', express_1.default.static(path.join(__dirname, 'assets')));
@@ -72,7 +73,7 @@ exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.urlencoded({ extended: true }));
 exports.app.use((0, compression_1.default)());
 exports.app.use((0, cookie_parser_1.default)());
-exports.app.use('/api', express_1.default.Router());
+exports.app.use('/api', auth_1.AuthRoutes);
 const $404 = (0, not_found_1.notFoundMiddleware)({
     logger: logger_1.default,
     suggestAlternatives: true,

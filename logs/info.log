@@ -161,3 +161,56 @@
 [33mwarn[39m: /favicon.ico {"timestamp":"2025-12-31 00:06:32"}
 [33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 00:06:32"}
 [33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-30T22:06:32.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 01:22:46"}
+[33mwarn[39m: /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-12-31 01:22:46"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 01:22:46"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/.well-known/appspecific/com.chrome.devtools.json","path":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-30T23:22:46.743Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 01:22:49"}
+[33mwarn[39m: /.well-known/appspecific/com.chrome.devtools.json {"timestamp":"2025-12-31 01:22:49"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 01:22:49"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/.well-known/appspecific/com.chrome.devtools.json","path":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-30T23:22:49.144Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2025-12-31 01:36:39"}
+[33mwarn[39m: /api/managers/login {"timestamp":"2025-12-31 01:36:39"}
+[33mwarn[39m: PostmanRuntime/7.51.0 {"timestamp":"2025-12-31 01:36:39"}
+[33mwarn[39m: Route not found {"body":{"bodySize":43,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/managers/login","path":"/api/managers/login","timestamp":"2025-12-30T23:36:39.123Z","userAgent":"PostmanRuntime/7.51.0"}
+[31merror[39m: No user was found with this email {"timestamp":"2025-12-31 02:09:39"}
+[31merror[39m: No user was found with this email {"timestamp":"2025-12-31 02:10:36"}
+[31merror[39m: No user was found with this email {"timestamp":"2025-12-31 02:15:28"}
+[31merror[39m: Internal Server Error {"timestamp":"2025-12-31 02:24:26"}
+[31merror[39m: Internal Server Error {"timestamp":"2025-12-31 02:25:14"}
+[31merror[39m: Internal Server Error {"timestamp":"2025-12-31 02:26:17"}
+[31merror[39m: Internal Server Error {"timestamp":"2025-12-31 02:29:47"}
+[33mwarn[39m: POST {"timestamp":"2025-12-31 02:37:21"}
+[33mwarn[39m: /api/users/register {"timestamp":"2025-12-31 02:37:21"}
+[33mwarn[39m: PostmanRuntime/7.51.0 {"timestamp":"2025-12-31 02:37:21"}
+[33mwarn[39m: Route not found {"body":{"bodySize":65,"hasBody":true},"ip":"::1","method":"POST","originalUrl":"/api/users/register","path":"/api/users/register","timestamp":"2025-12-31T00:37:21.458Z","userAgent":"PostmanRuntime/7.51.0"}
+[31merror[39m: No user was found with this email {"timestamp":"2025-12-31 02:38:03"}
+[31merror[39m: No user was found with this email {"timestamp":"2025-12-31 02:38:43"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: /api/test {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:53:42.556Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: /api/managers {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:53:42"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/api/managers","path":"/api/managers","timestamp":"2025-12-31T00:53:42.578Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: /api/test {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:54:00.826Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: /api/test {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:54:00"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:54:00.846Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: /test {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:54:23.778Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: /test {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:54:23"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:54:23.797Z"}
+[33mwarn[39m: GET {"timestamp":"2025-12-31 02:55:21"}
+[33mwarn[39m: /test {"timestamp":"2025-12-31 02:55:21"}
+[33mwarn[39m: undefined {"timestamp":"2025-12-31 02:55:21"}
+[33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:55:21.990Z"}

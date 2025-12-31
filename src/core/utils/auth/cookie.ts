@@ -2,7 +2,7 @@
 import { Request, Response } from "express"
 
 export function setAuthCookie(res: Response, token: string) {
-  res.cookie("auth_token", token, {
+  return res.cookie("access_token", token, {
     httpOnly: true,
     secure: process.env.NODE_ENV == "production",
     sameSite: "lax",
@@ -11,9 +11,9 @@ export function setAuthCookie(res: Response, token: string) {
 }
 
 export function clearAuthCookie(res: Response) {
-  res.clearCookie("auth_token")
+  return res.clearCookie("access_token")
 }
 
 export function getAuthCookie(req: Request) {
-  return req.cookies.auth_token
+  return req.cookies.access_token
 }

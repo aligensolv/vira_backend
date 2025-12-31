@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.authController = exports.authService = exports.authRepository = void 0;
+const auth_1 = require("../../packages/auth");
+const authRepository = new auth_1.AuthRepository();
+exports.authRepository = authRepository;
+const authService = new auth_1.AuthService(authRepository);
+exports.authService = authService;
+const authController = new auth_1.AuthController(authService);
+exports.authController = authController;

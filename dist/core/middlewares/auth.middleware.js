@@ -1,37 +1,40 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.authorizeRoles = exports.authMiddleware = void 0;
-const error_codes_1 = require("../../lib/error_codes");
-const status_codes_1 = require("../../lib/status_codes");
 const api_error_1 = require("../../lib/api_error");
 const jwt_1 = require("../utils/auth/jwt");
 const client_1 = require("../prisma/client");
+const cookie_1 = require("../utils/auth/cookie");
 const authMiddleware = async (req, res, next) => {
-    const token = req.headers.authorization;
+    const client_source = req.headers['x-client-source'];
+    const token = client_source == 'web' ? (0, cookie_1.getAuthCookie)(req) : req.headers.authorization;
+    console.log(token);
+    console.log(client_source);
     if (!token)
-        return next(new api_error_1.ApiError("Unauthorized", error_codes_1.ErrorCode.AUTH_ERROR, status_codes_1.StatusCode.NOT_AUTHORIZED));
+        return next(new api_error_1.AuthError("Unauthorized"));
     try {
-        const payload = (0, jwt_1.verifyToken)(token);
+        const payload = (0, jwt_1.verifyJwtToken)(token);
+        console.log(payload);
         if (!payload) {
-            throw new api_error_1.ApiError("Unauthorized", error_codes_1.ErrorCode.AUTH_ERROR, status_codes_1.StatusCode.NOT_AUTHORIZED);
+            throw new api_error_1.AuthError("Unauthorized");
         }
-        const user = await client_1.prisma.user.findUnique({ where: { id: payload.user_id } });
-        if (!user) {
-            throw new api_error_1.ApiError("Unauthorized", error_codes_1.ErrorCode.AUTH_ERROR, status_codes_1.StatusCode.NOT_AUTHORIZED);
-        }
-        req.user = user;
+        req.user_id = payload.id;
         next();
     }
     catch {
-        next(new api_error_1.ApiError("Unauthorized", error_codes_1.ErrorCode.AUTH_ERROR, status_codes_1.StatusCode.NOT_AUTHORIZED));
+        next(new api_error_1.AuthError("Unauthorized"));
     }
 };
 exports.authMiddleware = authMiddleware;
 const authorizeRoles = (...allowedRoles) => {
-    return (req, res, next) => {
-        const user = req.user;
+    return async (req, res, next) => {
+        const user = await client_1.prisma.user.findUnique({
+            where: {
+                id: req.user_id
+            }
+        });
         if (!user || !allowedRoles.includes(user.role)) {
-            return next(new api_error_1.ApiError("Not Authorized", error_codes_1.ErrorCode.AUTH_ERROR, status_codes_1.StatusCode.FORBIDDEN));
+            return next(new api_error_1.AuthError("Not Authorized"));
         }
         next();
     };

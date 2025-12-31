@@ -161,3 +161,56 @@
 {"level":"warn","message":"/favicon.ico","timestamp":"2025-12-31 00:06:32"}
 {"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-31 00:06:32"}
 {"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/favicon.ico","path":"/favicon.ico","timestamp":"2025-12-30T22:06:32.716Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 01:22:46"}
+{"level":"warn","message":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-31 01:22:46"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-31 01:22:46"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/.well-known/appspecific/com.chrome.devtools.json","path":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-30T23:22:46.743Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 01:22:49"}
+{"level":"warn","message":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-31 01:22:49"}
+{"level":"warn","message":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","timestamp":"2025-12-31 01:22:49"}
+{"ip":"::1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/.well-known/appspecific/com.chrome.devtools.json","path":"/.well-known/appspecific/com.chrome.devtools.json","timestamp":"2025-12-30T23:22:49.144Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"warn","message":"POST","timestamp":"2025-12-31 01:36:39"}
+{"level":"warn","message":"/api/managers/login","timestamp":"2025-12-31 01:36:39"}
+{"level":"warn","message":"PostmanRuntime/7.51.0","timestamp":"2025-12-31 01:36:39"}
+{"body":{"bodySize":43,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/managers/login","path":"/api/managers/login","timestamp":"2025-12-30T23:36:39.123Z","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"error","message":"No user was found with this email","timestamp":"2025-12-31 02:09:39"}
+{"level":"error","message":"No user was found with this email","timestamp":"2025-12-31 02:10:36"}
+{"level":"error","message":"No user was found with this email","timestamp":"2025-12-31 02:15:28"}
+{"level":"error","message":"Internal Server Error","timestamp":"2025-12-31 02:24:26"}
+{"level":"error","message":"Internal Server Error","timestamp":"2025-12-31 02:25:14"}
+{"level":"error","message":"Internal Server Error","timestamp":"2025-12-31 02:26:17"}
+{"level":"error","message":"Internal Server Error","timestamp":"2025-12-31 02:29:47"}
+{"level":"warn","message":"POST","timestamp":"2025-12-31 02:37:21"}
+{"level":"warn","message":"/api/users/register","timestamp":"2025-12-31 02:37:21"}
+{"level":"warn","message":"PostmanRuntime/7.51.0","timestamp":"2025-12-31 02:37:21"}
+{"body":{"bodySize":65,"hasBody":true},"ip":"::1","level":"warn","message":"Route not found","method":"POST","originalUrl":"/api/users/register","path":"/api/users/register","timestamp":"2025-12-31T00:37:21.458Z","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"error","message":"No user was found with this email","timestamp":"2025-12-31 02:38:03"}
+{"level":"error","message":"No user was found with this email","timestamp":"2025-12-31 02:38:43"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:53:42"}
+{"level":"warn","message":"/api/test","timestamp":"2025-12-31 02:53:42"}
+{"level":"warn","timestamp":"2025-12-31 02:53:42"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:53:42.556Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:53:42"}
+{"level":"warn","message":"/api/managers","timestamp":"2025-12-31 02:53:42"}
+{"level":"warn","timestamp":"2025-12-31 02:53:42"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/managers","path":"/api/managers","timestamp":"2025-12-31T00:53:42.578Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:54:00"}
+{"level":"warn","message":"/api/test","timestamp":"2025-12-31 02:54:00"}
+{"level":"warn","timestamp":"2025-12-31 02:54:00"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:54:00.826Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:54:00"}
+{"level":"warn","message":"/api/test","timestamp":"2025-12-31 02:54:00"}
+{"level":"warn","timestamp":"2025-12-31 02:54:00"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/api/test","path":"/api/test","timestamp":"2025-12-31T00:54:00.846Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:54:23"}
+{"level":"warn","message":"/test","timestamp":"2025-12-31 02:54:23"}
+{"level":"warn","timestamp":"2025-12-31 02:54:23"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:54:23.778Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:54:23"}
+{"level":"warn","message":"/test","timestamp":"2025-12-31 02:54:23"}
+{"level":"warn","timestamp":"2025-12-31 02:54:23"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:54:23.797Z"}
+{"level":"warn","message":"GET","timestamp":"2025-12-31 02:55:21"}
+{"level":"warn","message":"/test","timestamp":"2025-12-31 02:55:21"}
+{"level":"warn","timestamp":"2025-12-31 02:55:21"}
+{"ip":"::ffff:127.0.0.1","level":"warn","message":"Route not found","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:55:21.990Z"}

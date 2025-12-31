@@ -12,7 +12,8 @@ function errorHandler(err: ApiError, req: Request, res: Response, next: NextFunc
       error: {
         message: err.message || "Internal server error",
         code: err.code || ErrorCode.INTERNAL_SERVER_ERROR,
-        ...(err.errors && { details: err.errors }), // Only include if present
+        status: err.status,
+        ...(err.errors && { errors: err.errors }), // Only include if present
       },
     };
     res.status(status).json(response);

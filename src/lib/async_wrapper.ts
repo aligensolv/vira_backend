@@ -1,8 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import { ApiError } from "./api_error";
+import { ApiError, InternalServerError } from "./api_error";
 import logger from "../core/utils/logger";
-import { ErrorCode } from "./error_codes";
-import { StatusCode } from "./status_codes";
+
 
 type AsyncWrapperType = (req: Request, res: Response, next: NextFunction) => Promise<void>;
 
@@ -16,9 +15,7 @@ const asyncWrapper = (fn: AsyncWrapperType) => {
                 return next(error);
             }
 
-            const custom_error = new ApiError(
-                (error as Error).message, 
-                ErrorCode.INTERNAL_SERVER_ERROR, StatusCode.INTERNAL_SERVER)
+            const custom_error = new InternalServerError((error as Error).message)
             return next(custom_error);
         }
     }

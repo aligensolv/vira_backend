@@ -4,7 +4,7 @@ exports.setAuthCookie = setAuthCookie;
 exports.clearAuthCookie = clearAuthCookie;
 exports.getAuthCookie = getAuthCookie;
 function setAuthCookie(res, token) {
-    res.cookie("auth_token", token, {
+    return res.cookie("access_token", token, {
         httpOnly: true,
         secure: process.env.NODE_ENV == "production",
         sameSite: "lax",
@@ -12,8 +12,8 @@ function setAuthCookie(res, token) {
     });
 }
 function clearAuthCookie(res) {
-    res.clearCookie("auth_token");
+    return res.clearCookie("access_token");
 }
 function getAuthCookie(req) {
-    return req.cookies.auth_token;
+    return req.cookies.access_token;
 }

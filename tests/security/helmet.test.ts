@@ -3,7 +3,7 @@ import { app } from "../../src/app"; // import your actual Express app
 
 describe("Helmet Middleware", () => {
   it("should add common security headers", async () => {
-    const res = await request(app).get("/api/managers"); // hit any endpoint
+    const res = await request(app).get("/test"); // hit any endpoint
 
     // Check existence of headers (safer across Helmet versions)
     expect(res.headers).toHaveProperty("x-dns-prefetch-control");
@@ -21,7 +21,7 @@ describe("Helmet Middleware", () => {
   });
 
   it("should not break the response", async () => {
-    const res = await request(app).get("/api/managers");
+    const res = await request(app).get("/test");
     expect(res.status).toBe(200);
   });
 });

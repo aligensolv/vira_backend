@@ -1,50 +1,52 @@
 import { NextFunction, Request, Response } from "express"
-import { ErrorCode } from "../../lib/error_codes"
-import { StatusCode } from "../../lib/status_codes"
-import { ApiError } from "../../lib/api_error"
-import { verifyToken } from "../utils/auth/jwt"
-import { User } from "@prisma/client"
+import { AuthError } from "../../lib/api_error"
+import { verifyJwtToken } from "../utils/auth/jwt"
 import { prisma } from "../prisma/client"
 import { JwtPayload } from "jsonwebtoken"
+import { getAuthCookie } from "../utils/auth/cookie"
 
-export interface AuthRequest extends Request {
-  user?: User
-}
 
 export interface TokenPayload extends JwtPayload {
-    user_id: number,
+    id: number
     role: string
-
+    email: number
 }
 
-export const authMiddleware = async (req: AuthRequest, res: Response, next: NextFunction) => {
-  const token = req.headers.authorization
-  if (!token) return next(new ApiError("Unauthorized", ErrorCode.AUTH_ERROR, StatusCode.NOT_AUTHORIZED))
+export const authMiddleware = async (req: Request, res: Response, next: NextFunction) => {
+  const client_source = req.headers['x-client-source'] as 'web' | 'mobile-app' | 'dev'
+  
+    const token = client_source == 'web' ? getAuthCookie(req) : req.headers.authorization
+    console.log(token);
+    console.log(client_source);
+    
+  if (!token) return next(new AuthError("Unauthorized"))
 
   try {
-    const payload: TokenPayload | null = verifyToken<TokenPayload>(token)
+    const payload: TokenPayload | null = verifyJwtToken<TokenPayload>(token)
+    console.log(payload);
+    
     if (!payload) {
-        throw new ApiError("Unauthorized", ErrorCode.AUTH_ERROR, StatusCode.NOT_AUTHORIZED)
+        throw new AuthError("Unauthorized")
     }
 
 
-    const user = await prisma.user.findUnique({ where: { id: payload.user_id } })
-    if (!user) {
-        throw new ApiError("Unauthorized", ErrorCode.AUTH_ERROR, StatusCode.NOT_AUTHORIZED)
-    }
-
-    req.user = user
+    req.user_id = payload.id
     next()
   } catch {
-    next(new ApiError("Unauthorized", ErrorCode.AUTH_ERROR, StatusCode.NOT_AUTHORIZED))
+    next(new AuthError("Unauthorized"))
   }
 }
 
 export const authorizeRoles = (...allowedRoles: string[]) => {
-  return (req: AuthRequest, res: Response, next: NextFunction) => {
-    const user = req.user
+  return async (req: Request, res: Response, next: NextFunction) => {
+    const user = await prisma.user.findUnique({
+        where: {
+            id: req.user_id
+        }
+    })
+
     if (!user || !allowedRoles.includes(user.role)) {
-      return next(new ApiError("Not Authorized", ErrorCode.AUTH_ERROR, StatusCode.FORBIDDEN))
+      return next(new AuthError("Not Authorized"))
     }
     next()
   }

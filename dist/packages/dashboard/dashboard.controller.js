@@ -1,9 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getDashboardMetricsHandler = getDashboardMetricsHandler;
-const dashboard_service_1 = require("./dashboard.service");
-const dashboard_service = new dashboard_service_1.DashboardService();
-async function getDashboardMetricsHandler(req, res) {
-    const data = await dashboard_service.getDashboardMetrics();
-    res.json({ data });
+exports.DashboardController = void 0;
+const async_wrapper_1 = __importDefault(require("../../lib/async_wrapper"));
+class DashboardController {
+    dashboardService;
+    constructor(dashboardService) {
+        this.dashboardService = dashboardService;
+    }
+    getDashboardMetricsHandler = (0, async_wrapper_1.default)(async (_, res) => {
+        const data = await this.dashboardService.getDashboardMetrics();
+        res.json({ data });
+    });
 }
+exports.DashboardController = DashboardController;

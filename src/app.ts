@@ -15,6 +15,7 @@ import { RegionRoutes } from './packages/region';
 import { PlaceRoutes } from './packages/place';
 import { UserRoutes } from './packages/user';
 import { ManagerRoutes } from './packages/manager';
+import { DashboardRoutes } from './packages/dashboard';
 
 export const app = express();
 app.use(helmet())
@@ -55,7 +56,8 @@ app.use(
   RegionRoutes,
   PlaceRoutes,
   UserRoutes,
-  ManagerRoutes
+  ManagerRoutes,
+  DashboardRoutes
 )
 
 const $404 = notFoundMiddleware({

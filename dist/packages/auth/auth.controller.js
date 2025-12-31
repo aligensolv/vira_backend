@@ -22,5 +22,9 @@ class AuthController {
         const data = await this.authService.getCurrentUser(req.user_id);
         res.json(data);
     });
+    logoutUserHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        await this.authService.logoutUser();
+        res.json({ message: "Logged out successfully" });
+    });
 }
 exports.AuthController = AuthController;

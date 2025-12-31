@@ -26,9 +26,9 @@ class ApiError extends Error {
 }
 
 class ValidationError extends ApiError {
-  constructor(errors: any = []) {
+  constructor(errors: any = [], message?: string) {
     super({ 
-      message: "Validation failed",
+      message: message ?? "Validation Failed",
       code: ErrorCode.VALIDATION_ERROR,
       status: StatusCode.BAD_REQUEST,
       errors
@@ -46,11 +46,11 @@ class AuthError extends ApiError {
   }
 }
 
-class DuplicationError extends ApiError {
-  constructor(message = "Data is duplicated") {
+class ConflictError extends ApiError {
+  constructor(message = "There was a confliction with data") {
     super({
       message,
-      code: ErrorCode.DUPLICATION_ERROR,
+      code: ErrorCode.CONFLICT,
       status: StatusCode.CONFLICT
     });
   }
@@ -76,11 +76,22 @@ class InternalServerError extends ApiError {
   }
 }
 
+class NotFoundError extends ApiError {
+  constructor(message = "Resource not found") {
+    super({
+      message,
+      code: ErrorCode.NOT_FOUND,
+      status: StatusCode.NOT_FOUND
+    });
+  }
+}
+
 export {
     AuthError,
     ValidationError,
-    DuplicationError,
+    ConflictError,
     ApiError,
     BadRequestError,
-    InternalServerError
+    InternalServerError,
+    NotFoundError
 }

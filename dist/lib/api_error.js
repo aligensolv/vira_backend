@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.InternalServerError = exports.BadRequestError = exports.ApiError = exports.DuplicationError = exports.ValidationError = exports.AuthError = void 0;
+exports.NotFoundError = exports.InternalServerError = exports.BadRequestError = exports.ApiError = exports.ConflictError = exports.ValidationError = exports.AuthError = void 0;
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const error_codes_1 = require("./error_codes");
 const status_codes_1 = require("./status_codes");
@@ -17,9 +17,9 @@ class ApiError extends Error {
 }
 exports.ApiError = ApiError;
 class ValidationError extends ApiError {
-    constructor(errors = []) {
+    constructor(errors = [], message) {
         super({
-            message: "Validation failed",
+            message: message ?? "Validation Failed",
             code: error_codes_1.ErrorCode.VALIDATION_ERROR,
             status: status_codes_1.StatusCode.BAD_REQUEST,
             errors
@@ -37,16 +37,16 @@ class AuthError extends ApiError {
     }
 }
 exports.AuthError = AuthError;
-class DuplicationError extends ApiError {
-    constructor(message = "Data is duplicated") {
+class ConflictError extends ApiError {
+    constructor(message = "There was a confliction with data") {
         super({
             message,
-            code: error_codes_1.ErrorCode.DUPLICATION_ERROR,
+            code: error_codes_1.ErrorCode.CONFLICT,
             status: status_codes_1.StatusCode.CONFLICT
         });
     }
 }
-exports.DuplicationError = DuplicationError;
+exports.ConflictError = ConflictError;
 class BadRequestError extends ApiError {
     constructor(message = "Bad Request") {
         super({
@@ -67,3 +67,13 @@ class InternalServerError extends ApiError {
     }
 }
 exports.InternalServerError = InternalServerError;
+class NotFoundError extends ApiError {
+    constructor(message = "Resource not found") {
+        super({
+            message,
+            code: error_codes_1.ErrorCode.NOT_FOUND,
+            status: status_codes_1.StatusCode.NOT_FOUND
+        });
+    }
+}
+exports.NotFoundError = NotFoundError;

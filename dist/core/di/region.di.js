@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.regionService = exports.regionRepository = exports.regionController = void 0;
+const region_1 = require("../../packages/region");
+const regionRepository = new region_1.RegionRepository();
+exports.regionRepository = regionRepository;
+const regionService = new region_1.RegionService(regionRepository);
+exports.regionService = regionService;
+const regionController = new region_1.RegionController(regionService);
+exports.regionController = regionController;

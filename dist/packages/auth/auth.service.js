@@ -60,5 +60,8 @@ class AuthService {
             access_token
         });
     });
+    logoutUser = async () => (0, promise_wrapper_1.default)(async (resolve) => {
+        resolve(true);
+    });
 }
 exports.AuthService = AuthService;

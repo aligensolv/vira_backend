@@ -93,4 +93,10 @@ export class AuthService {
       })
     }
   )
+
+  public logoutUser = async () => promiseWrapper(
+    async (resolve) => {
+      resolve(true)
+    }
+  )
 }

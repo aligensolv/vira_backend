@@ -1,42 +1,38 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRegionsHandler = getRegionsHandler;
-exports.createRegionsHandler = createRegionsHandler;
-exports.deleteRegionsHandler = deleteRegionsHandler;
-exports.getRegionHandler = getRegionHandler;
-exports.updateRegionHandler = updateRegionHandler;
-const region_service_1 = require("./region.service");
-const region_schema_1 = require("./region.schema");
-const regionService = new region_service_1.RegionService();
-async function getRegionsHandler(req, res) {
-    const data = await regionService.getAllRegions();
-    res.json({ data });
-}
-async function createRegionsHandler(req, res) {
-    const parsing = region_schema_1.createRegionSchema.safeParse(req.body);
-    if (!parsing.success) {
-        return res.status(400).json({ error: parsing.error });
+exports.RegionController = void 0;
+const async_wrapper_1 = __importDefault(require("../../lib/async_wrapper"));
+class RegionController {
+    regionService;
+    constructor(regionService) {
+        this.regionService = regionService;
     }
-    const data = await regionService.createRegion(req.body);
-    res.json({ data });
-}
-async function deleteRegionsHandler(req, res) {
-    const { id } = req.params;
-    const data = await regionService.deleteRegion(+id);
-    res.json({ data });
-}
-async function getRegionHandler(req, res) {
-    const { id } = req.params;
-    const data = await regionService.getRegion(+id);
-    res.json({ data });
-}
-async function updateRegionHandler(req, res) {
-    const { id } = req.params;
-    const { name } = req.body;
-    console.log(id);
-    console.log(req.body);
-    const data = await regionService.updateRegion(+id, {
-        name
+    getRegionsHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const data = await this.regionService.getAllRegions();
+        res.json({ data });
     });
-    res.json({ data });
+    createRegionHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const data = await this.regionService.createRegion(req.body);
+        res.json({ data });
+    });
+    deleteRegionHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const data = await this.regionService.deleteRegion(+id);
+        res.json({ data });
+    });
+    getSingleRegionHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const data = await this.regionService.getSingleRegion(+id);
+        res.json({ data });
+    });
+    updateRegionHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const { name } = req.body;
+        const data = await this.regionService.updateRegion(+id, { name });
+        res.json({ data });
+    });
 }
+exports.RegionController = RegionController;

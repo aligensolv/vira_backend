@@ -8,13 +8,6 @@ class RegionSeeder {
      * Run the database seeds.
      */
     static async run() {
-        // Default seeding logic - customize as needed
-        await this.seed();
-    }
-    /**
-     * Seed Regions table.
-     */
-    static async seed() {
         console.log(`🌱 Seeding Regions...`);
         // Create your seeding logic here
         const regionsData = region_factory_1.RegionFactory.count(10).make();

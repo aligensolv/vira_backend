@@ -29,4 +29,11 @@ export class AuthController {
       res.json(data);
     }
   );
+
+  logoutUserHandler = asyncWrapper(
+    async (req: Request, res: Response) => {
+      await this.authService.logoutUser()
+      res.json({ message: "Logged out successfully" });
+    }
+  );
 }

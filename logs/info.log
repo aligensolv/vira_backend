@@ -214,3 +214,42 @@
 [33mwarn[39m: /test {"timestamp":"2025-12-31 02:55:21"}
 [33mwarn[39m: undefined {"timestamp":"2025-12-31 02:55:21"}
 [33mwarn[39m: Route not found {"ip":"::ffff:127.0.0.1","method":"GET","originalUrl":"/test","path":"/test","timestamp":"2025-12-31T00:55:21.990Z"}
+[31merror[39m: 
+Invalid `client_1.prisma.region.update()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\region\region.repo.js:16:39
+
+  13     return client_1.prisma.region.create({ data });
+  14 }
+  15 async updateById(id, data) {
+→ 16     return client_1.prisma.region.update(
+An operation failed because it depends on one or more records that were required but not found. No record was found for an update. {"timestamp":"2025-12-31 05:17:19"}
+[31merror[39m: No region found to be deleted {"timestamp":"2025-12-31 05:22:13"}
+[31merror[39m: No region found to be updated {"timestamp":"2025-12-31 05:22:41"}
+[31merror[39m: 
+Invalid `client_1.prisma.region.update()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\region\region.repo.js:16:39
+
+  13     return client_1.prisma.region.create({ data });
+  14 }
+  15 async updateById(id, data) {
+→ 16     return client_1.prisma.region.update(
+Unique constraint failed on the fields: (`name`) {"timestamp":"2025-12-31 05:22:50"}
+[31merror[39m: 
+Invalid `client_1.prisma.region.update()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\region\region.repo.js:16:39
+
+  13     return client_1.prisma.region.create({ data });
+  14 }
+  15 async updateById(id, data) {
+→ 16     return client_1.prisma.region.update(
+Unique constraint failed on the fields: (`name`) {"timestamp":"2025-12-31 05:24:08"}
+[31merror[39m: 
+Invalid `client_1.prisma.region.update()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\region\region.repo.js:16:39
+
+  13     return client_1.prisma.region.create({ data });
+  14 }
+  15 async updateById(id, data) {
+→ 16     return client_1.prisma.region.update(
+Unique constraint failed on the fields: (`name`) {"timestamp":"2025-12-31 05:24:45"}
+[31merror[39m: Region name already exists {"timestamp":"2025-12-31 05:33:04"}

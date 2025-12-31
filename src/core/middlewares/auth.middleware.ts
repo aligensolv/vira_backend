@@ -1,14 +1,14 @@
 import { NextFunction, Request, Response } from "express"
 import { AuthError } from "../../lib/api_error"
 import { verifyJwtToken } from "../utils/auth/jwt"
-import { prisma } from "../prisma/client"
 import { JwtPayload } from "jsonwebtoken"
 import { getAuthCookie } from "../utils/auth/cookie"
+import { UserRole } from "@prisma/client"
 
 
 export interface TokenPayload extends JwtPayload {
     id: number
-    role: string
+    role: UserRole
     email: number
 }
 
@@ -31,21 +31,18 @@ export const authMiddleware = async (req: Request, res: Response, next: NextFunc
 
 
     req.user_id = payload.id
+    req.user_role = payload.role
+
     next()
   } catch {
     next(new AuthError("Unauthorized"))
   }
 }
 
-export const authorizeRoles = (...allowedRoles: string[]) => {
+export const authorizeRoles = (...allowedRoles: UserRole[]) => {
   return async (req: Request, res: Response, next: NextFunction) => {
-    const user = await prisma.user.findUnique({
-        where: {
-            id: req.user_id
-        }
-    })
 
-    if (!user || !allowedRoles.includes(user.role)) {
+    if (!allowedRoles.includes(req.user_role)) {
       return next(new AuthError("Not Authorized"))
     }
     next()

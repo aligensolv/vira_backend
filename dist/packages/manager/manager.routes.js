@@ -1,10 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const manager_controller_1 = require("./manager.controller");
-const auth_middleware_1 = require("../../core/middlewares/auth.middleware");
+const manager_di_1 = require("../../core/di/manager.di");
 const router = (0, express_1.Router)();
-router.get("/managers", manager_controller_1.getManagersHandler);
-router.get("/managers/me", auth_middleware_1.checkAuthMiddleware, manager_controller_1.getCurrentManagerHandler);
-router.post("/managers/login", manager_controller_1.loginManagerHandler);
+router.get("/managers", manager_di_1.managerController.getAllManagersHandler);
 exports.default = router;

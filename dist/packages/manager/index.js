@@ -20,8 +20,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ManagerRoutes = void 0;
 __exportStar(require("./manager.controller"), exports);
 __exportStar(require("./manager.service"), exports);
-__exportStar(require("./manager.mapper"), exports);
-__exportStar(require("./manager.dto"), exports);
 __exportStar(require("./manager.schema"), exports);
 __exportStar(require("./manager.repo"), exports);
 var manager_routes_1 = require("./manager.routes");

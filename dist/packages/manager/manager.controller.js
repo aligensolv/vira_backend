@@ -1,20 +1,18 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getManagersHandler = getManagersHandler;
-exports.loginManagerHandler = loginManagerHandler;
-exports.getCurrentManagerHandler = getCurrentManagerHandler;
-const manager_service_1 = require("./manager.service");
-const managerService = new manager_service_1.ManagerService();
-async function getManagersHandler(req, res) {
-    const data = await managerService.getAllManagers();
-    res.json({ data });
+exports.ManagerController = void 0;
+const async_wrapper_1 = __importDefault(require("../../lib/async_wrapper"));
+class ManagerController {
+    managerService;
+    constructor(managerService) {
+        this.managerService = managerService;
+    }
+    getAllManagersHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const data = await this.managerService.getAllManagers();
+        res.json({ data });
+    });
 }
-async function loginManagerHandler(req, res) {
-    const { email, password } = req.body;
-    const { manager, token } = await managerService.loginManager({ email, password });
-    res.json({ manager, token });
-}
-async function getCurrentManagerHandler(req, res) {
-    const manager = req.user;
-    res.json({ manager });
-}
+exports.ManagerController = ManagerController;

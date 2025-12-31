@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.managerService = exports.managerController = exports.managerRepository = void 0;
+const manager_1 = require("../../packages/manager");
+const managerRepository = new manager_1.ManagerRepository();
+exports.managerRepository = managerRepository;
+const managerService = new manager_1.ManagerService(managerRepository);
+exports.managerService = managerService;
+const managerController = new manager_1.ManagerController(managerService);
+exports.managerController = managerController;

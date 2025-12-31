@@ -1,13 +1,22 @@
 import { prisma } from "../../core/prisma/client";
 import { Prisma } from "@prisma/client";
 
-export class UserRepository {
+export class ManagerRepository {
     async findMany(filter?: Prisma.UserWhereInput) {
         return prisma.user.findMany({
             where: {
                 ...filter,
-                role: 'USER'
+                OR: [
+                    {
+                        role: 'ADMIN'
+                    },
+
+                    {
+                        role: 'SUPER_ADMIN'
+                    }
+                ]
             }
         });
     }
+
 }

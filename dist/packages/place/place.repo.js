@@ -26,16 +26,32 @@ class PlaceRepository {
         return count;
     }
     async insert(data) {
-        return client_1.prisma.place.create({ data });
+        return client_1.prisma.place.create({
+            data,
+            include: {
+                region: true
+            }
+        });
     }
     async updateById(id, data) {
-        return client_1.prisma.place.update({ where: { id }, data });
+        return client_1.prisma.place.update({
+            where: { id },
+            data,
+            include: {
+                region: true
+            }
+        });
     }
     async updateMany(filter, data) {
         return client_1.prisma.place.updateMany({ where: filter, data });
     }
     async removeById(id) {
-        return client_1.prisma.place.delete({ where: { id } });
+        return client_1.prisma.place.delete({
+            where: { id },
+            include: {
+                region: true
+            }
+        });
     }
     async removeMany(filter) {
         return client_1.prisma.place.deleteMany({ where: filter });

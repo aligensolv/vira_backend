@@ -7,6 +7,8 @@ exports.PlaceService = void 0;
 const promise_wrapper_1 = __importDefault(require("../../lib/promise_wrapper"));
 const place_mapper_1 = require("./place.mapper");
 const api_error_1 = require("../../lib/api_error");
+const server_1 = require("../../server");
+const events_1 = require("../../infra/realtime/events");
 class PlaceService {
     placeRepository;
     constructor(placeRepository) {
@@ -36,6 +38,7 @@ class PlaceService {
     });
     createPlace = async ({ payload }) => (0, promise_wrapper_1.default)(async (resolve) => {
         const result = await this.placeRepository.insert(payload);
+        server_1.io.emit(events_1.SOCKET_EVENTS.PLACE.CREATED, (0, place_mapper_1.toPlaceDTO)(result));
         return resolve((0, place_mapper_1.toPlaceDTO)(result));
     });
     updatePlace = async ({ id, payload }) => (0, promise_wrapper_1.default)(async (resolve, reject) => {
@@ -45,6 +48,7 @@ class PlaceService {
             return reject(error);
         }
         const result = await this.placeRepository.updateById(id, payload);
+        server_1.io.emit(events_1.SOCKET_EVENTS.PLACE.UPDATED, (0, place_mapper_1.toPlaceDTO)(result));
         return resolve((0, place_mapper_1.toPlaceDTO)(result));
     });
     deletePlace = async ({ id }) => (0, promise_wrapper_1.default)(async (resolve, reject) => {
@@ -54,6 +58,7 @@ class PlaceService {
             return reject(error);
         }
         await this.placeRepository.removeById(id);
+        server_1.io.emit(events_1.SOCKET_EVENTS.PLACE.DELETED, id);
         return resolve(null);
     });
     getPlace = async ({ id }) => (0, promise_wrapper_1.default)(async (resolve) => {

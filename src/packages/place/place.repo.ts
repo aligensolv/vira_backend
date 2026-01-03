@@ -30,11 +30,22 @@ export class PlaceRepository {
     }
 
     async insert(data: Prisma.PlaceCreateInput) {
-        return prisma.place.create({ data });
+        return prisma.place.create({
+            data,
+            include: {
+                region: true
+            }
+        });
     }
 
     async updateById(id: number, data: Prisma.PlaceUpdateInput) {
-        return prisma.place.update({ where: { id }, data });
+        return prisma.place.update({
+            where: { id }, 
+            data,
+            include: {
+                region: true
+            }
+        });
     }
 
     async updateMany(filter: Prisma.PlaceWhereInput, data: Prisma.PlaceUpdateInput) {
@@ -42,7 +53,12 @@ export class PlaceRepository {
     }
 
     async removeById(id: number) {
-        return prisma.place.delete({ where: { id } });
+        return prisma.place.delete({
+            where: { id },
+            include: {
+                region: true
+            }
+        });
     }
 
     async removeMany(filter: Prisma.PlaceWhereInput) {

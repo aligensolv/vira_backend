@@ -7,6 +7,11 @@ exports.RealtimeEvents = {
         CREATED: "booking.created",
         EXTENDED: "booking.extended",
     },
+    PLACE: {
+        CREATED: "place.created",
+        UPDATED: "place.updated",
+        DELETED: "place.deleted",
+    },
     AVAILABILITY: {
         UPDATED: "availability.updated",
     },

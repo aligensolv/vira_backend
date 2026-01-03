@@ -6,6 +6,8 @@ import z from 'zod';
 import { updateRegionSchema } from '../region';
 import { NotFoundError } from '../../lib/api_error';
 import { PlaceFilters } from './place.type';
+import { io } from '../../server';
+import { SOCKET_EVENTS } from '../../infra/realtime/events';
 
 export class PlaceService {
   private readonly placeRepository
@@ -60,6 +62,7 @@ export class PlaceService {
   public createPlace = async ({ payload }: { payload: z.infer<typeof createPlaceSchema> }) => promiseWrapper(
     async (resolve) => {
       const result = await this.placeRepository.insert(payload)
+      io.emit(SOCKET_EVENTS.PLACE.CREATED, toPlaceDTO(result))
       return resolve(
         toPlaceDTO(result)
       );
@@ -76,6 +79,8 @@ export class PlaceService {
       
       const result = await this.placeRepository.updateById(id, payload)
 
+      io.emit(SOCKET_EVENTS.PLACE.UPDATED, toPlaceDTO(result))
+
       return resolve(
         toPlaceDTO(result)
       );
@@ -91,6 +96,7 @@ export class PlaceService {
       }
 
       await this.placeRepository.removeById(id)
+      io.emit(SOCKET_EVENTS.PLACE.DELETED, id)
       return resolve(null);
     }
   )

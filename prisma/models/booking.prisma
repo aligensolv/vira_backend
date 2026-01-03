@@ -1,6 +1,6 @@
 enum BookingStatus {
-  PENDING
-  CONFIRMED
+  INITIAL
+  ACTIVE
   CANCELLED
   COMPLETED
 }
@@ -16,13 +16,22 @@ model Booking {
 
   start_time       DateTime
   end_time         DateTime
-  duration_minutes Int
 
-  payment Payment?
+  // User requested duration
+  requested_duration_minutes Int
 
-  total_price Decimal @db.Decimal(10, 2)
+  // Actual duration (after extension)
+  actual_duration_minutes Int
 
-  status BookingStatus @default(PENDING)
+  // Pricing
+  price_per_hour Decimal @db.Decimal(10, 2)
+  total_price    Decimal @db.Decimal(10, 2)
+
+  status BookingStatus @default(INITIAL)
+
+  // Relations
+  payment          Payment?
+  extensions       BookingExtension[]
 
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt

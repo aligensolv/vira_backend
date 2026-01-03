@@ -7,6 +7,8 @@ export function toUserDTO(entity: User): UserDTO {
     name: entity.name,
     email: entity.email,
 
+    role: entity.role,
+
     created_at: entity.created_at,
     updated_at: entity.updated_at,
   };

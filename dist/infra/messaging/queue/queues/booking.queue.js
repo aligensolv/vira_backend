@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getExpirationJobId = exports.getActivationJobId = exports.bookingExpirationQueue = exports.bookingActivationQueue = void 0;
+const queue_factory_1 = require("./queue.factory");
+exports.bookingActivationQueue = (0, queue_factory_1.createQueue)('booking-activation');
+exports.bookingExpirationQueue = (0, queue_factory_1.createQueue)('booking-expiration');
+const getActivationJobId = (booking_id) => `booking:${booking_id}:activate`;
+exports.getActivationJobId = getActivationJobId;
+const getExpirationJobId = (booking_id) => `booking:${booking_id}:expire`;
+exports.getExpirationJobId = getExpirationJobId;

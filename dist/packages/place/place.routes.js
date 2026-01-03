@@ -9,6 +9,7 @@ const place_di_1 = require("../../core/di/place.di");
 const router = (0, express_1.Router)();
 router.get("/places", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.ADMIN, client_1.UserRole.SUPER_ADMIN), place_di_1.placeController.getPlacesHandler);
 router.get("/places/active", auth_middleware_1.authMiddleware, place_di_1.placeController.getActivePlacesHandler);
+router.get('/places/:id/availability');
 router.post('/places', auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.ADMIN, client_1.UserRole.SUPER_ADMIN), (0, validate_schema_middleware_1.validateSchema)(place_schema_1.createPlaceSchema), place_di_1.placeController.createPlaceHandler);
 router.get('/places/:id', auth_middleware_1.authMiddleware, place_di_1.placeController.getPlaceHandler);
 router.put('/places/:id', auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.ADMIN, client_1.UserRole.SUPER_ADMIN), place_di_1.placeController.updatePlaceHandler);

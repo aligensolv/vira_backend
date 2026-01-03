@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const api_error_1 = require("./api_error");
-const logger_1 = __importDefault(require("../core/utils/logger"));
+const logger_1 = __importDefault(require("../infra/monitoring/logger"));
 const asyncWrapper = (fn) => {
     return async (req, res, next) => {
         try {

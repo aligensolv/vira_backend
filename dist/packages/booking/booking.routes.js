@@ -1,8 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const booking_controller_1 = require("./booking.controller");
+const booking_di_1 = require("../../core/di/booking.di");
+const auth_middleware_1 = require("../../core/middlewares/auth.middleware");
+const client_1 = require("@prisma/client");
 const router = (0, express_1.Router)();
-router.get("/bookings", booking_controller_1.getBookingsHandler);
-router.get("/bookings/:id", booking_controller_1.getBookingHandler);
+router.get("/bookings", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.SUPER_ADMIN, client_1.UserRole.ADMIN), booking_di_1.bookingController.getBookingsHandler);
+router.get("/bookings/me", auth_middleware_1.authMiddleware, booking_di_1.bookingController.getUserBookingsHandler);
+router.get("/bookings/:id", auth_middleware_1.authMiddleware, booking_di_1.bookingController.getSingleBookingHandler);
+router.post('/bookings', auth_middleware_1.authMiddleware, booking_di_1.bookingController.createBookingHandler);
+router.post('/bookings/:id/extend', auth_middleware_1.authMiddleware, booking_di_1.bookingController.extendBookingHandler);
+router.post('/bookings/:id/cancel', auth_middleware_1.authMiddleware, booking_di_1.bookingController.cancelBookingHandler);
 exports.default = router;

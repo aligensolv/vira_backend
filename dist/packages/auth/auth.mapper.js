@@ -6,6 +6,7 @@ function toUserDTO(entity) {
         id: entity.id,
         name: entity.name,
         email: entity.email,
+        role: entity.role,
         created_at: entity.created_at,
         updated_at: entity.updated_at,
     };

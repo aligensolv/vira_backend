@@ -4,13 +4,32 @@ exports.BookingRepository = void 0;
 const client_1 = require("../../core/prisma/client");
 class BookingRepository {
     async findMany(filter) {
-        return client_1.prisma.booking.findMany({ where: filter });
+        return client_1.prisma.booking.findMany({
+            where: filter,
+            include: {
+                user: true,
+                extensions: true,
+                place: {
+                    include: {
+                        region: true
+                    }
+                },
+                payment: true
+            }
+        });
     }
     async findById(id) {
         return client_1.prisma.booking.findUnique({
             where: { id },
             include: {
-                user: true
+                user: true,
+                payment: true,
+                place: {
+                    include: {
+                        region: true
+                    }
+                },
+                extensions: true
             }
         });
     }

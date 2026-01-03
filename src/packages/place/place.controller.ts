@@ -26,7 +26,7 @@ export class PlaceController {
 
   public getActivePlacesHandler = asyncWrapper(
     async (req: Request, res: Response) => {
-      const data = await this.placeService.getAllActivePlaces();
+      const data = await this.placeService.listActive();
       res.json({ data });
     }
   );

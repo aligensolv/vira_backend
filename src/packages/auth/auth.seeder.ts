@@ -9,11 +9,18 @@ export class UserSeeder {
 
     const users = UserFactory.count(10).make()
 
+    const test_user: Omit<User, 'id' | 'created_at' | 'updated_at'> = {
+      name: 'test',
+      email: 'test@vira.no',
+      password: await generateHashedPassword('test'),
+      role: 'USER'
+    } 
+
 
     const admins: Omit<User, 'id' | 'created_at' | 'updated_at'>[] = [
       {
-        name: "Admin User",
-        email: "admin@example.com",
+        name: "Vira Admin",
+        email: "admin@vira.no",
         password: await generateHashedPassword("vira"),
         role: "SUPER_ADMIN",
       },
@@ -21,6 +28,7 @@ export class UserSeeder {
 
     const result = await prisma.user.createMany({
       data: [
+        test_user,
         ...users,
         ...admins
       ],

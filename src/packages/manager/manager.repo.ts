@@ -19,4 +19,20 @@ export class ManagerRepository {
         });
     }
 
+    async findUnique(filter: Prisma.UserWhereUniqueInput) {
+        return prisma.user.findUnique({ where: filter });
+    }
+
+    async insert(data: Prisma.UserCreateInput) {
+        return prisma.user.create({ data });
+    }
+
+    async deleteById(id: number) {
+        return prisma.user.delete({ where: { id } });
+    }
+
+    async updateById(id: number, data: Prisma.UserUpdateInput) {
+        return prisma.user.update({ where: { id }, data });
+    }
+
 }

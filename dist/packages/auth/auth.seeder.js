@@ -8,16 +8,23 @@ class UserSeeder {
     static async run() {
         console.log("> Seeding users...");
         const users = auth_factory_1.UserFactory.count(10).make();
+        const test_user = {
+            name: 'test',
+            email: 'test@vira.no',
+            password: await (0, password_1.generateHashedPassword)('test'),
+            role: 'USER'
+        };
         const admins = [
             {
-                name: "Admin User",
-                email: "admin@example.com",
+                name: "Vira Admin",
+                email: "admin@vira.no",
                 password: await (0, password_1.generateHashedPassword)("vira"),
                 role: "SUPER_ADMIN",
             },
         ];
         const result = await client_1.prisma.user.createMany({
             data: [
+                test_user,
                 ...users,
                 ...admins
             ],

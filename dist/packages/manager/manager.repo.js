@@ -18,5 +18,17 @@ class ManagerRepository {
             }
         });
     }
+    async findUnique(filter) {
+        return client_1.prisma.user.findUnique({ where: filter });
+    }
+    async insert(data) {
+        return client_1.prisma.user.create({ data });
+    }
+    async deleteById(id) {
+        return client_1.prisma.user.delete({ where: { id } });
+    }
+    async updateById(id, data) {
+        return client_1.prisma.user.update({ where: { id }, data });
+    }
 }
 exports.ManagerRepository = ManagerRepository;

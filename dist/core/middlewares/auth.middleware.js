@@ -9,7 +9,6 @@ const authMiddleware = async (req, res, next) => {
         return next(new api_error_1.AuthError("Unauthorized"));
     try {
         const payload = (0, jwt_1.verifyJwtToken)(token);
-        console.log(payload);
         if (!payload) {
             throw new api_error_1.AuthError("Unauthorized");
         }

@@ -20,7 +20,7 @@ class PlaceController {
         res.json({ data });
     });
     getActivePlacesHandler = (0, async_wrapper_1.default)(async (req, res) => {
-        const data = await this.placeService.getAllActivePlaces();
+        const data = await this.placeService.listActive();
         res.json({ data });
     });
     createPlaceHandler = (0, async_wrapper_1.default)(async (req, res) => {

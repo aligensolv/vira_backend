@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userService = exports.userRepository = exports.userController = exports.bookingService = exports.bookingRepository = exports.bookingController = void 0;
+const booking_1 = require("../../packages/booking");
+const user_1 = require("../../packages/user");
+const bookingRepository = new booking_1.BookingRepository();
+exports.bookingRepository = bookingRepository;
+const bookingService = new booking_1.BookingService(bookingRepository);
+exports.bookingService = bookingService;
+const bookingController = new booking_1.BookingController(bookingService);
+exports.bookingController = bookingController;
+const userRepository = new user_1.UserRepository();
+exports.userRepository = userRepository;
+const userService = new user_1.UserService(userRepository);
+exports.userService = userService;
+const userController = new user_1.UserController(userService);
+exports.userController = userController;

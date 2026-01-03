@@ -14,5 +14,27 @@ class ManagerController {
         const data = await this.managerService.getAllManagers();
         res.json({ data });
     });
+    getSingleManagerHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const data = await this.managerService.getSingleManager(+id);
+        res.json({ data });
+    });
+    createManagerHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { body } = req;
+        console.log(body);
+        const data = await this.managerService.createManager(body);
+        res.json({ data });
+    });
+    updateManagerHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const { body } = req;
+        const data = await this.managerService.updateManager(+id, body);
+        res.json({ data });
+    });
+    deleteManagerHandler = (0, async_wrapper_1.default)(async (req, res) => {
+        const { id } = req.params;
+        const data = await this.managerService.deleteManager(+id);
+        res.json({ data });
+    });
 }
 exports.ManagerController = ManagerController;

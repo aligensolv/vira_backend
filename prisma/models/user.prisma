@@ -16,4 +16,7 @@ model User {
 
   role UserRole @default(USER)
   Booking    Booking[]
+  payment Payment[]
+
+  @@map("users")
 }

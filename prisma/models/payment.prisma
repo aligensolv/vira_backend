@@ -1,16 +1,30 @@
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
 model Payment {
-    id Int @id @default(autoincrement())
-    
-    booking_id Int @unique
-    booking    Booking @relation(fields: [booking_id], references: [id])
-    
-    amount      Decimal @db.Decimal(10, 2)
-    paid_at     DateTime @default(now())
-    payment_method String
-    
-    created_at DateTime @default(now())
-    updated_at DateTime @updatedAt
-    
-    @@index([booking_id])
-    @@map("payments")
+  id Int @id @default(autoincrement())
+
+  booking_id Int @unique
+  booking    Booking @relation(fields: [booking_id], references: [id])
+
+  user_id Int
+  user    User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  amount Decimal @db.Decimal(10, 2)
+
+  method String? // "cash", "test-card", "apple-pay-test"
+
+  status PaymentStatus @default(PENDING)
+
+  paid_at DateTime?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([booking_id])
+  @@index([user_id])
+  @@map("payments")
 }

@@ -6,7 +6,7 @@ import compression from 'compression'
 import helmet from 'helmet';
 import cookieParser from "cookie-parser";
 
-import logger from './core/utils/logger';
+import logger from './infra/monitoring/logger';
 import { notFoundMiddleware } from './core/middlewares/not_found';
 import { appConfig, corsConfig } from './core/config/server_configs';
 import { TestRoute } from './dev.route';
@@ -16,6 +16,7 @@ import { PlaceRoutes } from './packages/place';
 import { UserRoutes } from './packages/user';
 import { ManagerRoutes } from './packages/manager';
 import { DashboardRoutes } from './packages/dashboard';
+import { BookingRoutes } from './packages/booking';
 
 export const app = express();
 app.use(helmet())
@@ -55,9 +56,10 @@ app.use(
   AuthRoutes,
   RegionRoutes,
   PlaceRoutes,
-  UserRoutes,
   ManagerRoutes,
-  DashboardRoutes
+  DashboardRoutes,
+  BookingRoutes,
+  UserRoutes
 )
 
 const $404 = notFoundMiddleware({

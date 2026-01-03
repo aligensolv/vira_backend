@@ -1,10 +1,23 @@
 import { appConfig } from './core/config/server_configs';
 import { app } from './app';
-import logger from './core/utils/logger';
+import logger from './infra/monitoring/logger';
 import { Server } from 'http';
+import { initSocket } from "./infra/realtime/socket";
+import { shutdownRedis } from './infra/cache/redis.client';
+
+const server = app.listen(appConfig.port, () => {
+  console.log(`[server] => http://localhost:${appConfig.port}`);
+});
+
+export const io = initSocket(server);
+
 
 async function shutdown(server: Server) {
   console.log("🔻 Shutting down gracefully...");
+  await shutdownRedis()
+  await io.close()
+
+
   server.close(() => {
     console.log("✅ Closed remaining connections");
     process.exit(0);
@@ -16,9 +29,6 @@ async function shutdown(server: Server) {
 
 async function main() {
   try {
-    const server = app.listen(appConfig.port, () => {
-      console.log(`[server] => http://localhost:${appConfig.port}`);
-    });
 
     server.on('error', (err) => {
       logger.error('Server error:', err.message);

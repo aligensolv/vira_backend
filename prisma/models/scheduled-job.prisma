@@ -1,0 +1,18 @@
+enum ScheduledJobStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model ScheduledJob {
+  id       String   @id @default(cuid()) @unique
+  type     String
+  entity_id Int
+  run_at   DateTime @default(now())
+  payload Json
+  version Int     @default(1)
+  status  ScheduledJobStatus @default(PENDING)
+
+  @@map("scheduled_jobs")
+}

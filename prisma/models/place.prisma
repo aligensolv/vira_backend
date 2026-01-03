@@ -2,7 +2,7 @@ model Place {
   id Int @id @default(autoincrement())
 
   region_id Int?
-  region    Region? @relation(fields: [region_id], references: [id], onDelete: Cascade)
+  region    Region? @relation(fields: [region_id], references: [id], onDelete: SetNull)
 
   name             String
   price_per_hour   Decimal @db.Decimal(10, 2)

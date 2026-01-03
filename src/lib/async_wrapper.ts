@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { ApiError, InternalServerError } from "./api_error";
-import logger from "../core/utils/logger";
+import logger from "../infra/monitoring/logger";
 
 
 type AsyncWrapperType = (req: Request, res: Response, next: NextFunction) => Promise<void>;

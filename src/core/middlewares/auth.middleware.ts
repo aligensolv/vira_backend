@@ -2,7 +2,6 @@ import { NextFunction, Request, Response } from "express"
 import { AuthError } from "../../lib/api_error"
 import { verifyJwtToken } from "../utils/auth/jwt"
 import { JwtPayload } from "jsonwebtoken"
-import { getAuthCookie } from "../utils/auth/cookie"
 import { UserRole } from "@prisma/client"
 
 
@@ -20,7 +19,6 @@ export const authMiddleware = async (req: Request, res: Response, next: NextFunc
 
   try {
     const payload: TokenPayload | null = verifyJwtToken<TokenPayload>(token)
-    console.log(payload);
     
     if (!payload) {
         throw new AuthError("Unauthorized")

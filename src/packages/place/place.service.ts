@@ -46,7 +46,7 @@ export class PlaceService {
     }
   )
 
-  public getAllActivePlaces = async () => promiseWrapper(
+  public listActive = async () => promiseWrapper(
     async (resolve) => {
       const result = await this.placeRepository.findMany({
         is_active: true

@@ -1,3 +1,6 @@
+import { UserSeeder } from '../../packages/auth/auth.seeder';
+import { PlaceSeeder } from '../../packages/place';
+import { RegionSeeder } from '../../packages/region';
 import { Seeder } from './../interfaces/seeder';
 
 export class DatabaseSeeder {
@@ -11,7 +14,9 @@ export class DatabaseSeeder {
   static async development() {
     console.log("> Seeding development data...");
     await this.call([
-
+      UserSeeder,
+      RegionSeeder,
+      PlaceSeeder
     ]);
   }
 

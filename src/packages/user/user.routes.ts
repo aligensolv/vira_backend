@@ -4,7 +4,6 @@ import { userController } from "../../core/di/user.di";
 import { authMiddleware } from "../../core/middlewares/auth.middleware";
 import { UserRole } from '@prisma/client';
 
-
 const router = Router();
 
 router.get(

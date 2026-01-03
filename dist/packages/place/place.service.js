@@ -28,7 +28,7 @@ class PlaceService {
         }
         return resolve(places.map(place_mapper_1.toPlaceDTO));
     });
-    getAllActivePlaces = async () => (0, promise_wrapper_1.default)(async (resolve) => {
+    listActive = async () => (0, promise_wrapper_1.default)(async (resolve) => {
         const result = await this.placeRepository.findMany({
             is_active: true
         });

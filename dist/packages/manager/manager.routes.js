@@ -2,6 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const manager_di_1 = require("../../core/di/manager.di");
+const auth_middleware_1 = require("../../core/middlewares/auth.middleware");
+const client_1 = require("@prisma/client");
+const validate_schema_middleware_1 = require("../../core/middlewares/validate-schema.middleware");
+const manager_schema_1 = require("./manager.schema");
 const router = (0, express_1.Router)();
-router.get("/managers", manager_di_1.managerController.getAllManagersHandler);
+router.get("/managers", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.ADMIN, client_1.UserRole.SUPER_ADMIN), manager_di_1.managerController.getAllManagersHandler);
+router.get("/managers/:id", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.ADMIN, client_1.UserRole.SUPER_ADMIN), manager_di_1.managerController.getSingleManagerHandler);
+router.post("/managers", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.SUPER_ADMIN), (0, validate_schema_middleware_1.validateSchema)(manager_schema_1.createManagerSchema), manager_di_1.managerController.createManagerHandler);
+router.put("/managers/:id", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.SUPER_ADMIN), (0, validate_schema_middleware_1.validateSchema)(manager_schema_1.updateManagerSchema), manager_di_1.managerController.updateManagerHandler);
+router.delete("/managers/:id", auth_middleware_1.authMiddleware, (0, auth_middleware_1.authorizeRoles)(client_1.UserRole.SUPER_ADMIN), manager_di_1.managerController.deleteManagerHandler);
 exports.default = router;

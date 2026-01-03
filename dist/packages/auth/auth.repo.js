@@ -5,7 +5,7 @@ const client_1 = require("../../core/prisma/client");
 class AuthRepository {
     async findUserByEmail(email) {
         return client_1.prisma.user.findUnique({
-            where: { email }
+            where: { email },
         });
     }
     async findUserById(id) {

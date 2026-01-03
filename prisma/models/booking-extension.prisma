@@ -1,0 +1,20 @@
+model BookingExtension {
+  id Int @id @default(autoincrement())
+
+  booking_id Int
+  booking    Booking @relation(fields: [booking_id], references: [id], onDelete: Cascade)
+
+  from_minutes Int
+  to_minutes   Int
+
+  old_end_time DateTime
+  new_end_time DateTime
+
+  price_before Decimal @db.Decimal(10, 2)
+  price_after  Decimal @db.Decimal(10, 2)
+
+  created_at DateTime @default(now())
+
+  @@index([booking_id])
+  @@map("booking_extensions")
+}

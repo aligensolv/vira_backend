@@ -20,6 +20,8 @@ router.get(
     placeController.getActivePlacesHandler
 )
 
+router.get('/places/:id/availability')
+
 router.post(
     '/places', 
     authMiddleware,

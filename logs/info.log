@@ -398,3 +398,478 @@ Unique constraint failed on the fields: (`name`) {"timestamp":"2025-12-31 05:24:
 [33mwarn[39m: /api {"timestamp":"2025-12-31 09:33:02"}
 [33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2025-12-31 09:33:02"}
 [33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api","path":"/api","referer":"http://localhost:5173/","timestamp":"2025-12-31T07:33:02.270Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:01"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:01"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:01"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:01.959Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:02"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:02"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:02"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:02.980Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:04"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:04"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:04"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:04.989Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:09"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:09"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:09"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:09.001Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:12"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:12"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:12"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:12.856Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:13"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:13"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:13"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:13.871Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:15"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:15"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:15"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:15.214Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:16.221Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:16"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:16.918Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:17"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:17"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:17"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:17.931Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:19"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:19"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:19"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:19.952Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:21:23"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:21:23"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:21:23"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:21:23.965Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:22:39"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:22:39"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:22:39"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:22:39.278Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:26:50"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:26:50"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:26:50"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:26:50.036Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:26:52"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:26:52"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:26:52"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:26:52.044Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:00"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:00"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:00"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:00.924Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:31"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:31"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:31"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:31.842Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:42"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:42"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:42"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:42.343Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:44"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:44"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:44"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:44.353Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:48"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:48"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:48"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:48.360Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:50"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:50"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:50"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:50.411Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:51"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:51"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:51"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:51.518Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:27:53"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:27:53"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:27:53"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:27:53.534Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:33:39"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 00:33:39"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:33:39"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:33:39.185Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:43:57"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:43:57"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:43:57"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:43:57.890Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:43:58"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:43:58"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:43:58"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:43:58.904Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:00"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:00"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:00"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:00.912Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:21"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:21"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:21"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:21.811Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:23"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:23"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:23"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:23.358Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:24"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:24"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:24"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:24.373Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:26"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:26"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:26"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:26.389Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:30"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:30"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:30"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:30.408Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:44:38"}
+[33mwarn[39m: /api/admin/managers {"timestamp":"2026-01-01 00:44:38"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:44:38"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/admin/managers","path":"/api/admin/managers","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:44:38.130Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:48:35"}
+[33mwarn[39m: /api/managers/23 {"timestamp":"2026-01-01 00:48:35"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:48:35"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/managers/23","path":"/api/managers/23","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:48:35.471Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 00:48:36"}
+[33mwarn[39m: /api/managers/23 {"timestamp":"2026-01-01 00:48:36"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 00:48:36"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/managers/23","path":"/api/managers/23","referer":"http://localhost:5173/","timestamp":"2025-12-31T22:48:36.481Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "khgjhgfj",
+             email: "hgfjhgfhj@gmaill.com",
+             password: "123456789",
+             password_confirmation: "123456789",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:27:37"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "Ali Tarek",
+             email: "alitarek99944@gmail.com",
+             password: "123456",
+             password_confirmation: "123456",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:33:46"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "Ali Tarek",
+             email: "alitarek99944@gmail.com",
+             password: "123456",
+             password_confirmation: "123456",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:33:54"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 05:48:54"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 05:48:54"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 05:48:54"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T03:48:54.761Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 05:48:55"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 05:48:55"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 05:48:55"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T03:48:55.777Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 05:48:57"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 05:48:57"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 05:48:57"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T03:48:57.786Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:07:28"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:08:29"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:08:49"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:09:14"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:09:23"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:10:38"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:10:38"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:10:38"}
+[33mwarn[39m: Route not found {"body":{"bodySize":40,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:10:38.089Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:10:50"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:10:50"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:10:50"}
+[33mwarn[39m: Route not found {"body":{"bodySize":41,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:10:50.415Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:10:53"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:10:53"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:10:53"}
+[33mwarn[39m: Route not found {"body":{"bodySize":43,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:10:53.506Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:10:58"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:10:58"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:10:58"}
+[33mwarn[39m: Route not found {"body":{"bodySize":43,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:10:58.976Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:11:09"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:11:09"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:11:09"}
+[33mwarn[39m: Route not found {"body":{"bodySize":40,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:11:09.914Z","userAgent":"Dart/3.10 (dart:io)"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 08:11:13"}
+[33mwarn[39m: /api/users/login {"timestamp":"2026-01-01 08:11:13"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 08:11:13"}
+[33mwarn[39m: Route not found {"body":{"bodySize":41,"hasBody":true},"ip":"::ffff:192.168.1.4","method":"POST","originalUrl":"/api/users/login","path":"/api/users/login","timestamp":"2026-01-01T06:11:13.328Z","userAgent":"Dart/3.10 (dart:io)"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:12:39"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:12:41"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 08:15:58"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 08:15:58"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 08:15:58"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T06:15:58.171Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 08:15:59"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 08:15:59"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 08:15:59"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T06:15:59.180Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 10:24:51"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 10:24:51"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 10:24:51"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T08:24:51.964Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 10:24:52"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 10:24:52"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 10:24:52"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T08:24:52.976Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 10:24:54"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 10:24:54"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 10:24:54"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T08:24:54.986Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: GET {"timestamp":"2026-01-01 10:25:12"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 10:25:12"}
+[33mwarn[39m: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 {"timestamp":"2026-01-01 10:25:12"}
+[33mwarn[39m: Route not found {"ip":"::1","method":"GET","originalUrl":"/api/bookings","path":"/api/bookings","referer":"http://localhost:5173/","timestamp":"2026-01-01T08:25:12.246Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+[33mwarn[39m: POST {"timestamp":"2026-01-01 10:32:26"}
+[33mwarn[39m: /api/bookings {"timestamp":"2026-01-01 10:32:26"}
+[33mwarn[39m: Dart/3.10 (dart:io) {"timestamp":"2026-01-01 10:32:26"}
+[33mwarn[39m: Route not found {"body":{"bodySize":142,"hasBody":true},"ip":"::ffff:10.0.0.70","method":"POST","originalUrl":"/api/bookings","path":"/api/bookings","timestamp":"2026-01-01T08:32:26.329Z","userAgent":"Dart/3.10 (dart:io)"}
+[31merror[39m: startTime.getTime is not a function {"timestamp":"2026-01-01 11:50:39"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:52:06.986660"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:52:09"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:52:44.120259"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:52:46"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:53:09.413454"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:53:12"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create({
+       data: {
+         user_id: undefined,
+         place_id: 10,
+         start_time: new Date("2026-01-01T09:59:29.356Z"),
+         end_time: new Date("2026-01-01T10:29:29.356Z"),
+         requested_duration_minutes: 30,
+         actual_duration_minutes: 30,
+         price_per_hour: new Prisma.Decimal("61"),
+         total_price: 61,
+         status: "PENDING",
+     +   user: {
+     +     create: UserCreateWithoutBookingInput | UserUncheckedCreateWithoutBookingInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutBookingInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing. {"timestamp":"2026-01-01 11:59:32"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:03:23"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:04:24"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:10:45"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:11:29"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:11:59"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:12:34"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:23:37"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:25:05"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:25:52"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:26:15"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:28:49"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:29:10"}
+[31merror[39m: 
+Invalid `tx.booking.findUnique()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:146:46
+
+  143 extendBooking = async (booking_id, extraMinutes) => (0, promise_wrapper_1.default)(async (resolve) => {
+  144     const result = await client_1.prisma.$transaction(async (tx) => {
+  145         // 1️⃣ Fetch booking
+→ 146         const booking = await tx.booking.findUnique({
+                where: {
+              +   id: Int
+                },
+                include: {
+                  place: true
+                }
+              })
+
+Argument `id` is missing. {"timestamp":"2026-01-01 13:30:52"}
+[31merror[39m: No user was found {"timestamp":"2026-01-01 14:08:44"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 14:08:49"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create(
+Foreign key constraint violated on the constraint: `bookings_user_id_fkey` {"timestamp":"2026-01-01 14:17:07"}
+[31merror[39m: Booking cannot be extended {"timestamp":"2026-01-01 14:31:12"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create(
+Foreign key constraint violated on the constraint: `bookings_user_id_fkey` {"timestamp":"2026-01-02 10:09:06"}
+[31merror[39m: 
+Invalid `tx.booking.findUnique()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:104:46
+
+  101 cancelBooking = async (booking_id) => (0, promise_wrapper_1.default)(async (resolve) => {
+  102     const result = await client_1.prisma.$transaction(async (tx) => {
+  103         // 1️⃣ Fetch booking
+→ 104         const booking = await tx.booking.findUnique({
+                where: {
+              +   id: Int
+                },
+                include: {
+                  payment: true
+                }
+              })
+
+Argument `id` is missing. {"timestamp":"2026-01-02 10:30:31"}
+[31merror[39m: Booking cannot be cancelled after it has started {"timestamp":"2026-01-02 10:31:30"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-02 13:23:18"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-02 13:23:32"}
+[31merror[39m: No user was found {"timestamp":"2026-01-03 08:12:53"}

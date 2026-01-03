@@ -50,3 +50,274 @@ E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packag
 Unique constraint failed on the fields: (`name`) {"timestamp":"2025-12-31 05:24:45"}
 [31merror[39m: Region name already exists {"timestamp":"2025-12-31 05:33:04"}
 [31merror[39m: Cannot read properties of undefined (reading 'count') {"timestamp":"2025-12-31 08:51:50"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "khgjhgfj",
+             email: "hgfjhgfhj@gmaill.com",
+             password: "123456789",
+             password_confirmation: "123456789",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:27:37"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "Ali Tarek",
+             email: "alitarek99944@gmail.com",
+             password: "123456",
+             password_confirmation: "123456",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:33:46"}
+[31merror[39m: 
+Invalid `client_1.prisma.user.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\manager\manager.repo.js:25:37
+
+  22     return client_1.prisma.user.findUnique({ where: filter });
+  23 }
+  24 async insert(data) {
+→ 25     return client_1.prisma.user.create({
+           data: {
+             name: "Ali Tarek",
+             email: "alitarek99944@gmail.com",
+             password: "123456",
+             password_confirmation: "123456",
+             ~~~~~~~~~~~~~~~~~~~~~
+         ?   created_at?: DateTime,
+         ?   updated_at?: DateTime,
+         ?   role?: UserRole,
+         ?   Booking?: BookingCreateNestedManyWithoutUserInput
+           }
+         })
+
+Unknown argument `password_confirmation`. Available options are marked with ?. {"timestamp":"2026-01-01 01:33:54"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:07:28"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:08:29"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:08:49"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 08:09:14"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:09:23"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:12:39"}
+[31merror[39m: Password is incorrect {"timestamp":"2026-01-01 08:12:41"}
+[31merror[39m: startTime.getTime is not a function {"timestamp":"2026-01-01 11:50:39"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:52:06.986660"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:52:09"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:52:44.120259"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:52:46"}
+[31merror[39m: 
+Invalid `tx.booking.findFirst()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:54:47
+
+  51 // 4️⃣ Calculate end time
+  52 const end_time = (0, booking_rule_1.calculateEndTime)(new Date(start_time), requested_duration_minutes);
+  53 // 5️⃣ Prevent overlapping (PENDING + ACTIVE)
+→ 54 const conflict = await tx.booking.findFirst({
+       where: {
+         place_id: 10,
+         status: {
+           in: [
+             "PENDING",
+             "ACTIVE"
+           ]
+         },
+         AND: [
+           {
+             start_time: {
+               lt: new Date("Invalid Date")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+             }
+           },
+           {
+             end_time: {
+               gt: "2026-01-01T11:53:09.413454"
+             }
+           }
+         ]
+       }
+     })
+
+Invalid value for argument `lt`: Provided Date object is invalid. Expected Date. {"timestamp":"2026-01-01 11:53:12"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create({
+       data: {
+         user_id: undefined,
+         place_id: 10,
+         start_time: new Date("2026-01-01T09:59:29.356Z"),
+         end_time: new Date("2026-01-01T10:29:29.356Z"),
+         requested_duration_minutes: 30,
+         actual_duration_minutes: 30,
+         price_per_hour: new Prisma.Decimal("61"),
+         total_price: 61,
+         status: "PENDING",
+     +   user: {
+     +     create: UserCreateWithoutBookingInput | UserUncheckedCreateWithoutBookingInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutBookingInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing. {"timestamp":"2026-01-01 11:59:32"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:03:23"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:04:24"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:10:45"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:11:29"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:11:59"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:12:34"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:23:37"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:25:05"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:25:52"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:26:15"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:28:49"}
+[31merror[39m: Place is not available at this time {"timestamp":"2026-01-01 12:29:10"}
+[31merror[39m: 
+Invalid `tx.booking.findUnique()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:146:46
+
+  143 extendBooking = async (booking_id, extraMinutes) => (0, promise_wrapper_1.default)(async (resolve) => {
+  144     const result = await client_1.prisma.$transaction(async (tx) => {
+  145         // 1️⃣ Fetch booking
+→ 146         const booking = await tx.booking.findUnique({
+                where: {
+              +   id: Int
+                },
+                include: {
+                  place: true
+                }
+              })
+
+Argument `id` is missing. {"timestamp":"2026-01-01 13:30:52"}
+[31merror[39m: No user was found {"timestamp":"2026-01-01 14:08:44"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-01 14:08:49"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create(
+Foreign key constraint violated on the constraint: `bookings_user_id_fkey` {"timestamp":"2026-01-01 14:17:07"}
+[31merror[39m: Booking cannot be extended {"timestamp":"2026-01-01 14:31:12"}
+[31merror[39m: 
+Invalid `tx.booking.create()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:73:46
+
+  70 const totalHours = Math.ceil(requested_duration_minutes / 60);
+  71 const total_price = totalHours * Number(place.price_per_hour);
+  72 // 7️⃣ Create booking
+→ 73 const booking = await tx.booking.create(
+Foreign key constraint violated on the constraint: `bookings_user_id_fkey` {"timestamp":"2026-01-02 10:09:06"}
+[31merror[39m: 
+Invalid `tx.booking.findUnique()` invocation in
+E:\workspace\Work\gensolv_media\parking_booking_project\vira_backend\dist\packages\booking\booking.service.js:104:46
+
+  101 cancelBooking = async (booking_id) => (0, promise_wrapper_1.default)(async (resolve) => {
+  102     const result = await client_1.prisma.$transaction(async (tx) => {
+  103         // 1️⃣ Fetch booking
+→ 104         const booking = await tx.booking.findUnique({
+                where: {
+              +   id: Int
+                },
+                include: {
+                  payment: true
+                }
+              })
+
+Argument `id` is missing. {"timestamp":"2026-01-02 10:30:31"}
+[31merror[39m: Booking cannot be cancelled after it has started {"timestamp":"2026-01-02 10:31:30"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-02 13:23:18"}
+[31merror[39m: No user was found with this email {"timestamp":"2026-01-02 13:23:32"}
+[31merror[39m: No user was found {"timestamp":"2026-01-03 08:12:53"}

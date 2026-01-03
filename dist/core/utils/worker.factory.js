@@ -1,11 +1,8 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createWorker = createWorker;
 const bullmq_1 = require("bullmq");
-const redis_config_1 = __importDefault(require("../config/redis.config"));
+const worker_connection_1 = require("../../infra/queue/worker.connection");
 function createWorker(queueName, processor) {
     const worker = new bullmq_1.Worker(queueName, async (job) => {
         try {
@@ -15,7 +12,7 @@ function createWorker(queueName, processor) {
             console.error(`[${queueName}] Job failed`, err);
             throw err;
         }
-    }, redis_config_1.default);
+    }, worker_connection_1.workerOptions);
     worker.waitUntilReady()
         .then(() => console.log(`✅ Worker for '${queueName}' is ready`))
         .catch((err) => {
